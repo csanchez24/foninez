@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1736902824150,
+      "tag": "0000_green_joystick",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,3114 @@
+{
+  "misc": {
+    "themeToggle": {
+      "key": "Cambiar tema",
+      "values": {
+        "light": "Claro",
+        "dark": "Oscuro",
+        "system": "Sistema"
+      }
+    },
+    "settings": {
+      "dropdown": {
+        "logout": "Cerrar sesión"
+      }
+    },
+    "table": {
+      "pagination": {
+        "rowsPerPage": "Filas por página",
+        "pageOf": {
+          "page": "Página",
+          "of": "de"
+        }
+      }
+    },
+    "dialogs": {
+      "delete": {
+        "title": "¿Estás seguro?",
+        "description": "Esta acción es irreversible. La entidad y los registros relacionados no se podrán recuperar una vez eliminados.",
+        "buttons": {
+          "cancel": "Cancelar",
+          "continue": "Continuar"
+        }
+      },
+      "unsaved": {
+        "title": "Cambios sin guardar",
+        "description": "Tienes cambios sin guardar. Guarda para persistir los cambios, de lo contrario puedes descartar el mensaje.",
+        "buttons": {
+          "save": "Guardar",
+          "discard": "Descartar"
+        }
+      },
+      "report": {
+        "title": "Informe",
+        "fields": {
+          "startDate": {
+            "label": "Fecha de inicio",
+            "text": "Selecciona una fecha"
+          },
+          "endDate": {
+            "label": "Fecha de fin",
+            "text": "Selecciona una fecha"
+          }
+        },
+        "buttons": {
+          "report": "Generar informe"
+        }
+      }
+    },
+    "buttons": {
+      "save": "Guardar",
+      "report": "Informe"
+    },
+    "nav": {
+      "dashboard": "Panel de control",
+      "schools": "Colegios",
+      "resources": "Recursos",
+      "programs": "Programas",
+      "professionals": "Profesionales",
+      "children": "Niños",
+      "plans": "Planes",
+      "classification": "Clasificaciones",
+      "inventoryTransactions": "Transacciones de inventario",
+      "reports": "Informes",
+      "activities": "Actividades"
+    }
+  },
+  "program": {
+    "layout": {
+      "title": "programas"
+    },
+    "buttons": {
+      "new": "Nuevo programa",
+      "goToPlans": "Ir a planes"
+    },
+    "table": {
+      "columns": {
+        "name": "Nombre",
+        "description": "Descripción",
+        "createdAt": "Fecha de creación",
+        "actions": {
+          "open": "Abrir",
+          "edit": "Editar",
+          "delete": "Eliminar",
+          "createModality": "Crear modalidad",
+          "openModalities": "Abrir modalidades"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filtrar resultados..."
+          }
+        },
+        "view": {
+          "view": "Ver",
+          "toggleColumns": {
+            "key": "Alternar columnas",
+            "values": {
+              "name": "Nombre",
+              "description": "Descripción"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Información",
+      "description": "Inspeccionar detalles del Programa y sus datos asociados",
+      "tabs": {
+        "primaryInformation": "Información primaria",
+        "modalities": "Modalidades"
+      },
+      "primaryInformationTab": {
+        "fields": {
+          "id": "Id",
+          "name": "Nombre",
+          "description": "Descripción",
+          "createdDate": "Fecha de creación"
+        }
+      },
+      "modalitiesTab": {
+        "table": {
+          "columns": {
+            "name": "Nombre",
+            "description": "Descripción",
+            "createdAt": "Fecha de creación"
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "Nuevo programa",
+        "update": "Programa"
+      },
+      "description": "Proporciona la información requerida y guarda cuando hayas terminado",
+      "buttons": {
+        "save": "Guardar"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "Esta acción es irreversible. El programa y los registros relacionados no se podrán recuperar una vez eliminados.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        },
+        "unsaved": {
+          "title": "Cambios sin guardar",
+          "description": "Tienes cambios sin guardar. Guarda para persistir los cambios, de lo contrario puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "info": {
+        "heading": "Información primaria",
+        "description": "Esta sección incluye los campos principales requeridos para crear un nuevo programa.",
+        "nameField": {
+          "label": "Nombre",
+          "placeholder": "Ingresa el nombre",
+          "description": "Proporciona un nombre válido."
+        },
+        "descriptionField": {
+          "label": "Descripción",
+          "placeholder": "Ingresa la descripción",
+          "description": "Describe en pocas palabras el propósito de este programa."
+        }
+      }
+    }
+  },
+  "modality": {
+    "layout": {
+      "title": "modalidades"
+    },
+    "buttons": {
+      "new": "Nueva modalidad",
+      "goToPrograms": "Ir a programas"
+    },
+    "table": {
+      "columns": {
+        "name": "Nombre",
+        "description": "Descripción",
+        "program": "Programa",
+        "createdAt": "Fecha de creación",
+        "actions": {
+          "open": "Abrir",
+          "edit": "Editar",
+          "delete": "Eliminar"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filtrar resultados..."
+          }
+        },
+        "view": {
+          "view": "Ver",
+          "toggleColumns": {
+            "key": "Alternar columnas",
+            "values": {
+              "name": "Nombre",
+              "description": "Descripción",
+              "programId": "Programa"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Información",
+      "description": "Inspeccionar detalles de la Modalidad y sus datos asociados",
+      "tabs": {
+        "primaryInformation": "Información primaria"
+      },
+      "primaryInformationTab": {
+        "fields": {
+          "id": "Id",
+          "name": "Nombre",
+          "description": "Descripción",
+          "program": "Programa",
+          "createdDate": "Fecha de creación"
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "Nueva modalidad",
+        "update": "Modalidad"
+      },
+      "description": "Proporciona la información requerida y guarda cuando hayas terminado",
+      "buttons": {
+        "save": "Guardar"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "Esta acción es irreversible. La modalidad y los registros relacionados no se podrán recuperar una vez eliminados.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        },
+        "unsaved": {
+          "title": "Cambios sin guardar",
+          "description": "Tienes cambios sin guardar. Guarda para persistir los cambios, de lo contrario puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "info": {
+        "heading": "Información primaria",
+        "description": "Esta sección incluye los campos principales requeridos para crear una nueva modalidad.",
+        "nameField": {
+          "label": "Nombre",
+          "placeholder": "Ingresa el nombre",
+          "description": "Proporciona un nombre válido."
+        },
+        "descriptionField": {
+          "label": "Descripción",
+          "placeholder": "Ingresa la descripción",
+          "description": "Describe en pocas palabras el propósito de este programa."
+        },
+        "modalityType": {
+          "label": "Tipo de Modalidad",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        }
+      }
+    }
+  },
+  "planModalityActivity": {
+    "misc": {
+      "dialogs": {
+        "updateStatus": {
+          "title": "¿Estás seguro de que quieres actualizar el estado?",
+          "description": "Asegúrate de revisar tu selección antes de proceder con la actualización, ya que esto moverá el plan al siguiente paso.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        }
+      }
+    },
+    "layout": {
+      "title": "Actividades",
+      "breadCrumbList": {
+        "plans": "Planes",
+        "activities": "Actividades"
+      }
+    },
+    "buttons": {
+      "new": "Nueva actividad del plan",
+      "goToPlans": "Ir a planes",
+      "reject": "Rechazar",
+      "sendToReview": "Enviar a revisión",
+      "review": "Revisar",
+      "approve": "Aprobar"
+    },
+    "statuses": {
+      "draft": "Borrador",
+      "pending review": "Pendiente de revisión",
+      "reviewed": "Revisado",
+      "approved": "Aprobado",
+      "rejected": "Rechazado"
+    },
+    "table": {
+      "columns": {
+        "name": "Nombre",
+        "description": "Descripción",
+        "planModalityId": "Modalidad",
+        "requiredProofOfCompletionCount": "# Soportes",
+        "schoolsTotal": "Total de Colegios",
+        "participantsTotal": "Total de Participantes",
+        "resourcesTotal": "Total de Recursos",
+        "startDate": "Fecha de inicio",
+        "endDate": "Fecha de fin",
+        "actions": {
+          "open": "Abrir",
+          "edit": "Editar",
+          "delete": "Eliminar"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filtrar resultados..."
+          }
+        },
+        "view": {
+          "view": "Ver",
+          "toggleColumns": {
+            "key": "Alternar columnas",
+            "values": {
+              "name": "Nombre",
+              "description": "Descripción",
+              "planModalityId": "Modalidad",
+              "requiredProofOfCompletionCount": "Soporte de finalización requerida",
+              "startDate": "Fecha de inicio",
+              "endDate": "Fecha de fin"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Información",
+      "description": "Inspeccionar detalles de la Actividad y sus datos asociados",
+      "tabs": {
+        "primaryInformation": "Información primaria",
+        "schools": "Colegios",
+        "resources": "Recursos",
+        "proofFiles": "Archivos de soporte"
+      },
+      "primaryInformationTab": {
+        "fields": {
+          "id": "Id",
+          "name": "Nombre",
+          "description": "Descripción",
+          "requiredProofOfCompletionCount": "Cantidad de soportes de finalización",
+          "planModality": "Modalidad",
+          "createdDate": "Fecha de creación",
+          "startDate": "Fecha de inicio",
+          "endDate": "Fecha de fin"
+        }
+      },
+      "schoolsTab": {
+        "table": {
+          "columns": {
+            "name": "Nombre",
+            "participantsQty": "Cantidad de participantes",
+            "statuses": {
+              "label": "Estado",
+              "values": [
+                { "value": "pending", "label": "pendiente" },
+                { "value": "planning", "label": "planificación" },
+                { "value": "requested_resources", "label": "recursos solicitados" },
+                { "value": "confirmed_resources", "label": "recursos confirmados" },
+                { "value": "active", "label": "activo" },
+                { "value": "completed", "label": "completado" },
+                { "value": "verified", "label": "verificado" },
+                { "value": "rejected", "label": "rechazado" }
+              ]
+            }
+          }
+        }
+      },
+      "resourcesTab": {
+        "table": {
+          "columns": {
+            "name": "Nombre",
+            "qty": "Cantidad"
+          }
+        }
+      },
+      "proofFiles": {
+        "table": {
+          "toolbar": {
+            "searchFilter": {
+              "input": {
+                "placeholder": "Filtrar resultados..."
+              }
+            }
+          },
+          "columns": {
+            "classification": "Clasificación"
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "Nueva Actividad de Modalidad del Plan",
+        "update": "Actividad de Modalidad del Plan"
+      },
+      "description": "Proporciona la información requerida y guarda cuando hayas terminado",
+      "buttons": {
+        "save": "Guardar"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "Esta acción es irreversible. El plan y los registros relacionados no se podrán recuperar una vez eliminados.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        },
+        "unsaved": {
+          "title": "Cambios sin guardar",
+          "description": "Tienes cambios sin guardar. Guarda para persistir los cambios, de lo contrario puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "tabs": {
+        "primaryInformation": "Información primaria",
+        "schools": "Colegios",
+        "resources": "Recursos",
+        "proofFiles": "Archivos de soporte"
+      },
+      "info": {
+        "heading": "Información primaria",
+        "description": "Esta sección incluye los campos principales requeridos para crear una nueva actividad de modalidad del plan.",
+        "planModalityField": {
+          "label": "Modalidad",
+          "placeholder": "Selecciona una modalidad del plan",
+          "description": "Selecciona la modalidad a la que pertenece esta actividad."
+        },
+        "serviceAipiField": {
+          "label": "Servicios Aipi",
+          "placeholder": "Selecciona un servicio del plan",
+          "description": "Selecciona el servicio al que pertenece esta actividad."
+        },
+        "nameField": {
+          "label": "Nombre",
+          "placeholder": "Ingresa el nombre",
+          "description": "Proporciona un nombre válido."
+        },
+        "descriptionField": {
+          "label": "Descripción",
+          "placeholder": "Ingresa la descripción",
+          "description": "Describe en pocas palabras el propósito de esta actividad."
+        },
+        "requiredProofOfCompletionCountField": {
+          "label": "Soporte de finalización",
+          "placeholder": "Ingresa el número de soportes de finalización requeridas",
+          "description": "Este número representa la cantidad de soportes requeridas para completar la actividad."
+        },
+        "startDateField": {
+          "label": "Fecha de inicio",
+          "placeholder": "Ingresa la fecha de inicio",
+          "description": "Proporciona una fecha de inicio para la actividad"
+        },
+        "endDateField": {
+          "label": "Fecha de fin",
+          "placeholder": "Ingresa la fecha de fin",
+          "description": "Proporciona una fecha de fin para la actividad"
+        }
+      },
+      "schools": {
+        "heading": "Colegios",
+        "description": "Asigna colegios donde se llevará a cabo la actividad.",
+        "dialog": {
+          "trigger": "Agregar colegio",
+          "title": "Agregar colegio a la actividad",
+          "description": "Completa los campos a continuación y guarda cuando hayas terminado",
+          "cancelButton": "Cancelar",
+          "addButton": "Agregar",
+          "updateButton": "Actualizar"
+        },
+        "table": {
+          "columns": {
+            "name": "Nombre",
+            "participantsQty": "Cantidad de participantes",
+            "status": "Estado",
+            "actions": {
+              "edit": "Editar",
+              "delete": "Eliminar"
+            }
+          },
+          "empty": "Sin entradas"
+        },
+        "schoolField": {
+          "label": "Nombre de la colegio",
+          "placeholder": "Elige una colegio de las opciones",
+          "description": "Este es el lugar donde se llevará a cabo la actividad",
+          "commandEmpty": "No se encontraron resultados",
+          "commandPlaceholder": "Buscar colegio..."
+        },
+        "participantsQtyField": {
+          "label": "Número de participantes",
+          "placeholder": "Ingresa el número de participantes en esta ubicación",
+          "description": "Esto representa el número de participantes/niños que asistirán a la actividad"
+        },
+        "status": {
+          "label": "Estado",
+          "placeholder": "Selecciona un estado de las opciones",
+          "description": "Rastrea el estado de esta colegio a medida que avanzamos el plan a través de todas las etapas"
+        }
+      },
+      "resources": {
+        "heading": "Recursos",
+        "description": "Asigna recursos donde se llevará a cabo la actividad.",
+        "dialog": {
+          "trigger": "Agregar recurso",
+          "title": "Agregar recurso a la actividad",
+          "description": "Completa los campos a continuación y guarda cuando hayas terminado",
+          "cancelButton": "Cancelar",
+          "addButton": "Agregar",
+          "updateButton": "Actualizar"
+        },
+        "table": {
+          "columns": {
+            "name": "Nombre",
+            "qty": "Cantidad",
+            "actions": {
+              "edit": "Editar",
+              "delete": "Eliminar"
+            }
+          },
+          "empty": "Sin entradas"
+        },
+        "resourceField": {
+          "label": "Nombre del recurso",
+          "placeholder": "Elige un recurso de las opciones",
+          "description": "Recurso necesario para cumplir con la actividad",
+          "commandEmpty": "No se encontraron resultados",
+          "commandPlaceholder": "Buscar recurso..."
+        },
+        "qtyField": {
+          "label": "Cantidades",
+          "placeholder": "Ingresa la cantidad necesaria para este recurso",
+          "description": "Esto representa la cantidad de un solo recurso necesario para la actividad"
+        }
+      },
+      "proofFiles": {
+        "heading": "Archivos de soporte",
+        "description": "Asigna archivos de soporte para la actividad.",
+        "dialog": {
+          "trigger": "Agregar archivo de soporte",
+          "title": "Agregar archivo de soporte a la actividad",
+          "description": "Completa los campos a continuación y guarda cuando hayas terminado",
+          "cancelButton": "Cancelar",
+          "addButton": "Agregar",
+          "updateButton": "Actualizar"
+        },
+        "table": {
+          "columns": {
+            "proofFileClassification": "Clasificación",
+            "planModalityActivity": "Actividad",
+            "actions": {
+              "edit": "Editar",
+              "delete": "Eliminar"
+            }
+          },
+          "empty": "Sin entradas"
+        },
+        "proofFileClassificationField": {
+          "label": "Nombre de la clasificación",
+          "placeholder": "Elige una clasificación de las opciones",
+          "description": "Clasificación necesaria para agrupar los archivos",
+          "commandEmpty": "No se encontraron resultados",
+          "commandPlaceholder": "Buscar clasificación..."
+        },
+        "classification": {
+          "buttons": {
+            "new": "Agregar nueva clasificación"
+          },
+          "dialog": {
+            "trigger": "Agregar clasificación",
+            "title": "Agregar nueva clasificación",
+            "description": "Completa los campos a continuación y guarda cuando hayas terminado",
+            "cancelButton": "Cancelar",
+            "addButton": "Crear clasificación",
+            "viewButton": "Ver clasificaciones",
+            "updateButton": "Actualizar"
+          },
+          "form": {
+            "heading": "Nueva clasificación",
+            "description": "Completa los campos y haz clic en guardar cuando hayas terminado.",
+            "nameField": {
+              "label": "Nombre",
+              "placeholder": "Nombre de la clasificación del archivo de soporte",
+              "description": "Usa este nombre para identificar cada clasificación"
+            },
+            "buttons": {
+              "cancel": "Cancelar",
+              "save": "Guardar"
+            }
+          }
+        }
+      }
+    }
+  },
+  "plan": {
+    "layout": {
+      "title": "planes"
+    },
+    "buttons": {
+      "new": "Nuevo plan",
+      "actions": "Acciones",
+      "newPlan": "Nuevo plan",
+      "newProgram": "Nuevo programa",
+      "goToPrograms": "Ir a programas"
+    },
+    "table": {
+      "columns": {
+        "year": "Año",
+        "longTermObjective": "Objetivo a largo plazo",
+        "shortTermObjective": "Objetivo a corto plazo",
+        "justification": "Justificación",
+        "description": "Descripción",
+        "rejectionNote": "Nota de rechazo",
+        "program": "Programa",
+        "status": {
+          "label": "Estado",
+          "values": [
+            { "value": "draft", "label": "borrador" },
+            { "value": "pending review", "label": "pendiente de revisión" },
+            { "value": "reviewed", "label": "revisado" },
+            { "value": "approved", "label": "aprobado" },
+            { "value": "rejected", "label": "rechazado" }
+          ]
+        },
+        "createdAt": "Fecha de creación",
+        "actions": {
+          "open": "Abrir",
+          "edit": "Editar",
+          "delete": "Eliminar",
+          "createActivity": "Crear una actividad",
+          "updateStatus": "Actualizar estado",
+          "viewActivities": "Ver actividades"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filtrar resultados..."
+          }
+        },
+        "view": {
+          "view": "Ver",
+          "toggleColumns": {
+            "key": "Alternar columnas",
+            "values": {
+              "year": "Año",
+              "programId": "Programa",
+              "longTermObjective": "Objetivo a largo plazo",
+              "shortTermObjective": "Objetivo a corto plazo",
+              "justification": "Justificación",
+              "description": "Descripción",
+              "rejectionNote": "Nota de rechazo",
+              "status": "Estado"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Información",
+      "description": "Inspeccionar detalles del Plan y sus datos asociados",
+      "tabs": {
+        "primaryInformation": "Información primaria"
+      },
+      "primaryInformationTab": {
+        "fields": {
+          "id": "Id",
+          "year": "Año",
+          "description": "Descripción",
+          "longTermObjective": "Objetivo a largo plazo",
+          "shortTermObjective": "Objetivo a corto plazo",
+          "justification": "Justificación",
+          "status": "Estado",
+          "rejectionNote": "Nota de rechazo",
+          "program": "Programa",
+          "createdDate": "Fecha de creación"
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "Nuevo plan",
+        "update": "Plan"
+      },
+      "description": "Proporciona la información requerida y guarda cuando hayas terminado",
+      "buttons": {
+        "save": "Guardar"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "Esta acción es irreversible. El plan y los registros relacionados no se podrán recuperar una vez eliminados.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        },
+        "unsaved": {
+          "title": "Cambios sin guardar",
+          "description": "Tienes cambios sin guardar. Guarda para persistir los cambios, de lo contrario puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "info": {
+        "heading": "Información primaria",
+        "description": "Esta sección incluye los campos principales requeridos para crear un nuevo plan.",
+        "programField": {
+          "label": "Programa",
+          "placeholder": "Selecciona un programa...",
+          "description": "Asigna el programa al que pertenece este plan"
+        },
+        "yearField": {
+          "label": "Año",
+          "placeholder": "Ingresa el año",
+          "description": "Proporciona un año válido."
+        },
+        "statusField": {
+          "label": "Estado",
+          "placeholder": "Selecciona el estado...",
+          "description": "Asigna un estado al plan a medida que avanza por los departamentos."
+        },
+        "descriptionField": {
+          "label": "Descripción",
+          "placeholder": "Ingresa la descripción",
+          "description": "Proporciona una descripción."
+        },
+        "longTermObjectiveField": {
+          "label": "Objetivo a largo plazo",
+          "placeholder": "Ingresa un objetivo a largo plazo",
+          "description": "Proporciona un objetivo a largo plazo."
+        },
+        "shortTermObjectiveField": {
+          "label": "Objetivo a corto plazo",
+          "placeholder": "Ingresa un objetivo a corto plazo",
+          "description": "Proporciona un objetivo a corto plazo."
+        },
+        "justificationField": {
+          "label": "Justificación",
+          "placeholder": "Ingresa una justificación",
+          "description": "Proporciona una justificación."
+        },
+        "rejectionNoteField": {
+          "label": "Nota de rechazo",
+          "placeholder": "Ingresa una nota de rechazo",
+          "description": "Proporciona una nota de rechazo."
+        }
+      }
+    }
+  },
+  "proofFileClassification": {
+    "layout": {
+      "title": "Proof file classifications"
+    },
+    "buttons": {
+      "new": "New classification",
+      "actions": "Actions",
+      "newClassification": "New classification"
+    },
+    "table": {
+      "columns": {
+        "name": "name",
+        "createdAt": "Created Date",
+        "actions": {
+          "open": "Open",
+          "edit": "Edit",
+          "delete": "Delete"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "name": "name"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "description": "Inpect Classification details as well as its associated data",
+      "tabs": {
+        "primaryInformation": "Primary Information"
+      },
+      "primaryInformationTab": {
+        "fields": {
+          "id": "Id",
+          "name": "Name",
+          "createdDate": "Created Date"
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New classification",
+        "update": "Classification"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Plan and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new classification.",
+        "nameField": {
+          "label": "Name",
+          "placeholder": "Enter name",
+          "description": "Provide a valid name."
+        }
+      }
+    }
+  },
+  "dashboard": {
+    "layout": {
+      "title": "Panel de control",
+      "searchFilter": {
+        "input": {
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "filter": "Filtrar"
+        }
+      }
+    },
+    "cardOne": {
+      "title": "Actividades",
+      "labelOne": "Completas",
+      "labelTwo": "Porcentaje",
+      "labelThree": "En ejecución"
+    },
+    "cardTwo": {
+      "title": "Colegios"
+    },
+    "cardThree": {
+      "title": "Niños",
+      "labelOne": "presupuestado",
+      "labelTwo": "Porcentaje"
+    },
+    "inventoryTable": {
+      "title": "Transacciones de inventario",
+      "columns": {
+        "type": "Tipo",
+        "orderNumber": "Número de orden",
+        "activity": "Actividad",
+        "status": "Estado",
+        "createdDate": "Fecha de creación"
+      }
+    },
+    "ActivitiesMonthlyChart": {
+      "title": "Actividades mensuales"
+    },
+    "ActivitiesStatusChart": {
+      "title": "Estado de actividades"
+    },
+    "RegisterMonthlyChart": {
+      "title": "Registro mensual"
+    }
+  },
+  "activity": {
+    "layout": {
+      "title": "actividades"
+    },
+    "buttons": {
+      "new": "Nueva actividad"
+    },
+    "table": {
+      "columns": {
+        "activity": "Actividad",
+        "school": "colegio",
+        "participants": "Participantes",
+        "createdAt": "Fecha de creación",
+        "statuses": {
+          "label": "Estado",
+          "values": [
+            { "value": "pending", "label": "pendiente" },
+            { "value": "planning", "label": "planificación" },
+            { "value": "requested_resources", "label": "recursos solicitados" },
+            { "value": "confirmed_resources", "label": "recursos confirmados" },
+            { "value": "active", "label": "activo" },
+            { "value": "completed", "label": "completado" },
+            { "value": "verified", "label": "verificado" },
+            { "value": "rejected", "label": "rechazado" }
+          ]
+        },
+        "actions": {
+          "info": "Información",
+          "startPlanning": "Iniciar planificación",
+          "planning": "Planificación",
+          "register": "Registrar",
+          "requestResources": "Solicitar recursos",
+          "confirmResources": "Confirmar recursos",
+          "startActivity": "Iniciar actividad",
+          "addProof": "Agregar soporte",
+          "complete": "Completar",
+          "verify": "Verificar",
+          "reject": "Rechazar",
+          "edit": "Editar",
+          "delete": "Eliminar"
+        }
+      },
+      "filters": {
+        "status": "estado",
+        "school": "colegio",
+        "activity": "actividad"
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filtrar resultados..."
+          }
+        },
+        "view": {
+          "view": "Ver",
+          "toggleColumns": {
+            "key": "Alternar columnas",
+            "values": {
+              "name": "Nombre",
+              "description": "Descripción",
+              "createdAt": "Fecha de creación",
+              "actions": "Acciones"
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "Nueva actividad",
+        "update": "Actividad"
+      },
+      "description": "Proporciona la información requerida y guarda cuando hayas terminado",
+      "buttons": {
+        "save": "Guardar"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "Esta acción es irreversible. La actividad y los registros relacionados no se podrán recuperar una vez eliminados.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        },
+        "unsaved": {
+          "title": "Cambios sin guardar",
+          "description": "Tienes cambios sin guardar. Guarda para persistir los cambios, de lo contrario puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "info": {
+        "heading": "Información primaria",
+        "description": "Esta sección incluye los campos principales requeridos para crear una nueva actividad.",
+        "nameField": {
+          "label": "Nombre",
+          "placeholder": "Ingresa el nombre",
+          "description": "Proporciona un nombre válido para identificar la actividad."
+        },
+        "descriptionField": {
+          "label": "Descripción",
+          "placeholder": "Ingresa la descripción",
+          "description": "Proporciona una descripción."
+        }
+      }
+    },
+    "formStartPlaning": {
+      "title": "¿Está seguro que desea empezar a planear?",
+      "description": "Si confirma, podrá ingresar los recursos y profesionales necesarios para la actividad",
+      "buttons": {
+        "cancel": "Cancelar",
+        "confirm": "Confirmar"
+      }
+    },
+    "formVerify": {
+      "title": "¿esta seguro que desea verificar la actividad?",
+      "description": "Si confirma se verificara la actividad",
+      "buttons": {
+        "cancel": "Cancelar",
+        "confirm": "Confirmar"
+      }
+    },
+    "formDeny": {
+      "title": "Rechazar",
+      "content": "La actividad será rechazada.",
+      "note": "Nota",
+      "button": "Rechazar"
+    },
+    "formRequestResources": {
+      "title": "¿Está seguro que desea solicitar los recursos?",
+      "description": "Si confirma, se enviará la solicitud de los recursos.",
+      "buttons": {
+        "cancel": "Cancelar",
+        "confirm": "Confirmar"
+      }
+    },
+    "formStartActivity": {
+      "title": "¿Está seguro que desea iniciar la actividad?",
+      "description": "Si inicia la actividad, podría empezar a añadir las soporte.",
+      "buttons": {
+        "cancel": "Cancelar",
+        "confirm": "Confirmar"
+      }
+    },
+    "formConfirmResources": {
+      "headings": "Confirmar recursos",
+      "description": "Por favor, confirme la cantidad recibida. La confirmación no se completará hasta que la cantidad confirmada coincida con la cantidad esperada.",
+      "buttons": {
+        "confirm": "Confirmar"
+      },
+      "confirmModal": {
+        "title": "¿Está absolutamente seguro?",
+        "description": "Esta acción colocará la cantidad solicitada en la cantidad recibida.",
+        "buttons": {
+          "action": "Valores predeterminados",
+          "cancel": "Cancelar",
+          "confirm": "Confirmar"
+        }
+      },
+      "info": {
+        "heading": "Información primaria",
+        "description": "Esta sección incluye los campos principales requeridos para crear una nueva actividad.",
+        "qtyRequested": "Cantidad solicitada",
+        "resourceField": {
+          "label": "Nombre",
+          "placeholder": "Ingresa el nombre",
+          "description": "Proporciona un nombre válido para identificar la actividad."
+        },
+        "qtyField": {
+          "label": "Cantidad recibida",
+          "placeholder": "Ingresa la cantidad",
+          "description": "Proporciona una cantidad."
+        }
+      }
+    },
+    "formComplete": {
+      "headings": "Completar",
+      "description": "Por favor, complete la actividad",
+      "buttons": {
+        "confirm": "Confirmar"
+      },
+      "confirmModal": {
+        "title": "¿Está absolutamente seguro?",
+        "description": "Esta acción colocará la cantidad recibida en la cantidad utilizada.",
+        "buttons": {
+          "action": "Usar todo",
+          "cancel": "Cancelar",
+          "confirm": "Confirmar"
+        }
+      },
+      "info": {
+        "heading": "Información primaria",
+        "description": "Esta sección incluye los campos principales requeridos para crear una nueva actividad.",
+        "qtyReceived": "Cantidad recibida",
+        "resourceField": {
+          "label": "Nombre",
+          "placeholder": "Ingresa el nombre",
+          "description": "Proporciona un nombre válido para identificar la actividad."
+        },
+        "qtyField": {
+          "label": "Cantidad utilizada",
+          "placeholder": "Ingresa la cantidad",
+          "description": "Proporciona una cantidad."
+        },
+        "noteField": {
+          "label": "Note",
+          "placeholder": "Enter Note",
+          "description": "Provide a Note."
+        }
+      }
+    },
+    "info": {
+      "heading": "Información",
+      "tabs": {
+        "primaryInformation": "Información",
+        "professionals": "Profesionales",
+        "resources": "Recursos",
+        "children": "Niños",
+        "proofs": "Soportes"
+      },
+      "columns": {
+        "activity": "Actividad",
+        "school": "Colegio",
+        "participantsQty": "Cantidad de participantes",
+        "status": "Estado",
+        "rejectNote": "Nota de rechazo",
+        "createdAt": "Fecha de creación"
+      },
+      "tableProfessional": {
+        "columns": {
+          "firstName": "Nombre",
+          "lastName": "Apellido",
+          "email": "Correo electrónico",
+          "createdAt": "Fecha de creación"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filtrar resultados..."
+            }
+          }
+        }
+      },
+      "tableResource": {
+        "columns": {
+          "name": "Nombre",
+          "qty": "Cantidad",
+          "qtyReceive": "Cantidad recibida",
+          "qtyUsed": "Cantidad utilizada",
+          "note": "Note",
+          "createdAt": "Fecha de creación"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filtrar resultados..."
+            }
+          }
+        }
+      },
+      "tableChildren": {
+        "columns": {
+          "firstName": "Nombre",
+          "lastName": "Apellido",
+          "status": "Estado",
+          "statuses": {
+            "label": "Estado",
+            "values": [
+              { "value": "pending", "label": "pendiente" },
+              { "value": "confirmed", "label": "confirmado" },
+              { "value": "rejected", "label": "rechazado" }
+            ]
+          },
+          "note": "Nota",
+          "createdAt": "Fecha de creación"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filtrar resultados..."
+            }
+          }
+        }
+      },
+      "tableProof": {
+        "columns": {
+          "note": "Nota",
+          "createdAt": "Fecha de creación"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filtrar resultados..."
+            }
+          }
+        }
+      },
+      "tableProofAttendances": {
+        "title": "Información de soporte",
+        "tabs": {
+          "files": "Archivos",
+          "children": "Niños"
+        },
+        "columns": {
+          "firstName": "Nombre",
+          "lastName": "Apellido",
+          "attend": "Asistencia",
+          "resources": "Recursos"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filtrar resultados..."
+            }
+          }
+        }
+      }
+    },
+    "planning": {
+      "headings": "Planificación",
+      "description": "Proporciona la información requerida y guarda cuando hayas terminado",
+      "buttons": {
+        "save": "Agregar"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "Esta acción es irreversible. La actividad y los registros relacionados no se podrán recuperar una vez eliminados.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        }
+      },
+      "main": {
+        "startDateField": {
+          "label": "Fecha de inicio",
+          "placeholder": "Ingrese la fecha de inicio",
+          "description": "Proporcione una fecha de inicio para la actividad"
+        },
+        "endDateField": {
+          "label": "Fecha de finalización",
+          "placeholder": "Ingrese la fecha de finalización",
+          "description": "Proporcione una fecha de finalización para la actividad"
+        },
+        "buttons": {
+          "save": "Actualizar"
+        }
+      },
+      "professional": {
+        "heading": "Profesionales",
+        "description": "Esta sección incluye los campos principales requeridos para crear una nueva actividad.",
+        "table": {
+          "columns": {
+            "professional": "Profesional",
+            "actions": {
+              "delete": "Eliminar"
+            }
+          },
+          "empty": "Sin entradas"
+        },
+        "professionalField": {
+          "label": "Profesional",
+          "placeholder": "Seleccionar profesional...",
+          "empty": "No se encontraron resultados.",
+          "description": "Asignar profesional a la actividad.",
+          "input": {
+            "placeholder": "Filtrar profesional"
+          }
+        }
+      },
+      "resources": {
+        "heading": "Recursos",
+        "description": "Esta sección incluye los campos principales requeridos para crear una nueva actividad.",
+        "schoolQty": "calcular basado en colegios",
+        "confirmModal": {
+          "title": "¿Está absolutamente seguro?",
+          "description": "Esta acción no se puede deshacer. Esto actualizará permanentemente la cantidad.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "confirm": "Confirmar"
+          }
+        },
+        "table": {
+          "columns": {
+            "resource": "Recurso",
+            "qtyTotal": "Cantidad total",
+            "qtyAvailable": "Cantidad disponible",
+            "qty": "Cantidad"
+          },
+          "empty": "Sin entradas"
+        },
+        "qtyField": {
+          "label": "Profesional"
+        }
+      }
+    },
+    "proof": {
+      "headings": "Soporte",
+      "description": "Proporciona la información requerida y guarda cuando hayas terminado",
+      "buttons": {
+        "save": "Agregar"
+      },
+      "tabs": {
+        "main": "Archivos",
+        "suppliers": "Niños"
+      },
+      "dialogs": {
+        "unsaved": {
+          "title": "Cambios sin guardar",
+          "description": "Tienes cambios sin guardar. Guarda para persistir los cambios, de lo contrario puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "files": {
+        "heading": "Archivos",
+        "description": "Esta sección incluye los campos principales requeridos para crear una nueva actividad.",
+        "descriptionFile": "Archivos",
+        "fileField": {
+          "description": "Adjunta el archivo."
+        },
+        "noteField": {
+          "label": "Nota",
+          "placeholder": "Nota",
+          "description": "Explica un poco sobre el día."
+        }
+      },
+      "children": {
+        "heading": "Niños",
+        "description": "Esta sección incluye los campos principales requeridos para crear una nueva actividad.",
+        "child": {
+          "label": "Profesional"
+        },
+        "buttons": {
+          "mark": "Marcar como SÍ asistieron",
+          "unMark": "Marcar como NO asistieron"
+        }
+      }
+    }
+  },
+  "register": {
+    "layout": {
+      "title": "Actividad"
+    },
+    "buttons": {
+      "sync": "Sincronizar datos sin conexión",
+      "new": "Nuevo registro"
+    },
+    "info": {
+      "heading": "Información",
+      "headingGuardian": "Tutor",
+      "columns": {
+        "firstName": "Nombre",
+        "middleName": "Segundo nombre",
+        "lastName": "Apellido",
+        "secondLastName": "Segundo apellido",
+        "identification": "Identificación",
+        "createdAt": "Fecha de creación"
+      }
+    },
+    "table": {
+      "columns": {
+        "idNum": "Número de Identificación",
+        "firstName": "Primer Nombre",
+        "lastName": "Apellido",
+        "status": "Estado",
+        "note": "Nota",
+        "createdAt": "Fecha de Creación",
+        "actions": {
+          "info": "Información",
+          "edit": "Editar",
+          "delete": "Eliminar",
+          "resync": "Resync"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filtrar resultados..."
+          }
+        },
+        "view": {
+          "view": "Ver",
+          "toggleColumns": {
+            "key": "Alternar columnas",
+            "values": {
+              "name": "Nombre",
+              "status": "Estado",
+              "createdAt": "Fecha de creación",
+              "actions": "Acciones"
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "Nuevo registro",
+        "update": "Registro"
+      },
+      "description": "Proporciona la información requerida y guarda cuando hayas terminado",
+      "buttons": {
+        "save": "Guardar",
+        "sync": "Sincronizar"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "Esta acción es irreversible. El registro y los registros relacionados no se podrán recuperar una vez eliminados.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        },
+        "unsaved": {
+          "title": "Cambios sin guardar",
+          "description": "Tienes cambios sin guardar. Guarda para persistir los cambios, de lo contrario puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "info": {
+        "heading": "Beneficiario",
+        "headingGuardian": "Tutor",
+        "subheading": {
+          "basicData": "Datos Básicos",
+          "infoData": "Datos Básicos",
+          "extraData": "Datos Extras",
+          "affiliationData": "Datos de Afiliación"
+        },
+        "identificationField": {
+          "label": "Identificaciones",
+          "placeholder": "Seleccionar identificación...",
+          "empty": "No se encontraron resultados.",
+          "description": "Asignar identificación a la persona.",
+          "input": {
+            "placeholder": "Filtrar identificaciones"
+          }
+        },
+        "idNumField": {
+          "label": "Número de identificación",
+          "placeholder": "Ingresa el número de identificación",
+          "description": "Proporciona un número de identificación."
+        },
+        "firstNameField": {
+          "label": "Nombre",
+          "placeholder": "Ingresa el nombre",
+          "description": "Proporciona un nombre."
+        },
+        "middleNameField": {
+          "label": "Segundo nombre",
+          "placeholder": "Ingresa el segundo nombre",
+          "description": "Proporciona un segundo nombre."
+        },
+        "lastNameField": {
+          "label": "Apellido",
+          "placeholder": "Ingresa el apellido",
+          "description": "Proporciona un apellido."
+        },
+        "secondLastNameField": {
+          "label": "Segundo apellido",
+          "placeholder": "Ingresa el segundo apellido",
+          "description": "Proporciona un segundo apellido."
+        },
+        "deactivationReason": {
+          "label": "Motivo de desactivación",
+          "placeholder": "Ingresa el motivo de desactivación",
+          "description": "Proporciona un motivo."
+        },
+        "address": {
+          "label": "Dirección",
+          "placeholder": "Ingresa la dirección",
+          "description": "Proporciona una dirección."
+        },
+        "birthDate": {
+          "label": "Fecha de nacimiento",
+          "placeholder": "Ingresa la fecha de nacimiento",
+          "description": "Proporciona una fecha de nacimiento."
+        },
+        "affiliationDate": {
+          "label": "Fecha de afiliación",
+          "placeholder": "Ingresa la fecha de afiliación",
+          "description": "Proporciona una fecha de afiliación."
+        },
+        "deactivationDate": {
+          "label": "Fecha de desactivación",
+          "placeholder": "Ingresa la fecha de desactivación",
+          "description": "Proporciona una fecha de desactivación."
+        },
+        "areaType": {
+          "label": "Tipo de área",
+          "placeholder": "Ingresa el tipo de área",
+          "description": "Proporciona un tipo de área."
+        },
+        "kinship": {
+          "label": "Parentesco",
+          "placeholder": "Selecciona el parentesco...",
+          "empty": "No se encontraron resultados.",
+          "description": "Asigna el parentesco a la persona.",
+          "input": {
+            "placeholder": "Filtrar parentesco"
+          }
+        },
+        "beneficiaryType": {
+          "label": "Tipo de beneficiario",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "gender": {
+          "label": "Género",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "country": {
+          "label": "País",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "state": {
+          "label": "Estado",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "city": {
+          "label": "Ciudad",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "birthState": {
+          "label": "Estado de nacimiento",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "birthCity": {
+          "label": "Ciudad de nacimiento",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "educationLevel": {
+          "label": "Nivel educativo",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "schoolGrade": {
+          "label": "Grado escolar",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "ethnicity": {
+          "label": "Etnia",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "population": {
+          "label": "Población",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "vulnerabilityFactor": {
+          "label": "Factor de vulnerabilidad",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "shift": {
+          "label": "Turno",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "indigenousReserve": {
+          "label": "Reserva indígena",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "indigenousCommunity": {
+          "label": "Comunidad indígena",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "identificationFieldGuardian": {
+          "label": "Identificaciones",
+          "placeholder": "Seleccionar identificación...",
+          "empty": "No se encontraron resultados.",
+          "description": "Asignar identificación a la persona.",
+          "input": {
+            "placeholder": "Filtrar identificaciones"
+          }
+        },
+        "idNumFieldGuardian": {
+          "label": "Número de identificación",
+          "placeholder": "Ingresa el número de identificación",
+          "description": "Proporciona un número de identificación."
+        },
+        "firstNameFieldGuardian": {
+          "label": "Nombre",
+          "placeholder": "Ingresa el nombre",
+          "description": "Proporciona un nombre."
+        },
+        "middleNameFieldGuardian": {
+          "label": "Segundo nombre",
+          "placeholder": "Ingresa el segundo nombre",
+          "description": "Proporciona un segundo nombre."
+        },
+        "lastNameFieldGuardian": {
+          "label": "Apellido",
+          "placeholder": "Ingresa el apellido",
+          "description": "Proporciona un apellido."
+        },
+        "secondLastNameFieldGuardian": {
+          "label": "Segundo apellido",
+          "placeholder": "Ingresa el segundo apellido",
+          "description": "Proporciona un segundo apellido."
+        }
+      }
+    }
+  },
+  "school": {
+    "layout": {
+      "title": "colegios"
+    },
+    "buttons": {
+      "new": "Nueva colegio"
+    },
+    "table": {
+      "columns": {
+        "name": "Nombre",
+        "infrastructureCode": "Código de infraestructura",
+        "daneCode": "Código DANE",
+        "branchCode": "Código de sucursal",
+        "areaType": {
+          "label": "Tipo de área",
+          "values": [
+            { "value": "urban", "label": "urbana" },
+            { "value": "rural", "label": "rural" }
+          ]
+        },
+        "sectorType": {
+          "label": "Tipo de sector",
+          "values": [
+            { "value": "official / public", "label": "oficial / público" },
+            { "value": "private", "label": "privado" },
+            { "value": "mixed", "label": "mixto" },
+            { "value": "not applicable", "label": "no aplicable" }
+          ]
+        },
+        "city": "Ciudad",
+        "activities": "# Actividades",
+        "actions": {
+          "info": "Información",
+          "edit": "Editar",
+          "delete": "Eliminar"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filtrar resultados..."
+          }
+        },
+        "view": {
+          "view": "Ver",
+          "toggleColumns": {
+            "key": "Alternar columnas",
+            "values": {
+              "name": "Nombre",
+              "cityId": "Ciudad",
+              "actions": "Acciones"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Información",
+      "columns": {
+        "name": "Nombre",
+        "infrastructureCode": "Código de infraestructura",
+        "daneCode": "Código DANE",
+        "branchCode": "Código de sucursal",
+        "areaType": {
+          "label": "Tipo de área",
+          "values": [
+            { "value": "urban", "label": "urbana" },
+            { "value": "rural", "label": "rural" }
+          ]
+        },
+        "sectorType": {
+          "label": "Tipo de sector",
+          "values": [
+            { "value": "official / public", "label": "oficial / público" },
+            { "value": "private", "label": "privado" },
+            { "value": "mixed", "label": "mixto" },
+            { "value": "not applicable", "label": "no aplicable" }
+          ]
+        },
+        "city": "Ciudad",
+        "activities": "# Actividades",
+        "created_date": "Fecha de creación"
+      },
+      "tableActivities": {
+        "columns": {
+          "activity": "Actividad",
+          "qty": "Cantidad",
+          "status": "Estado"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filtrar resultados..."
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "Nueva colegio",
+        "update": "Colegio"
+      },
+      "description": "Proporciona la información requerida y guarda cuando hayas terminado",
+      "buttons": {
+        "save": "Guardar"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "Esta acción es irreversible. La colegio y los registros relacionados no se podrán recuperar una vez eliminados.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        },
+        "unsaved": {
+          "title": "Cambios sin guardar",
+          "description": "Tienes cambios sin guardar. Guarda para persistir los cambios, de lo contrario puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "info": {
+        "heading": "Información primaria",
+        "description": "Esta sección incluye los campos principales requeridos para crear una nueva colegio.",
+        "name": {
+          "label": "Nombre",
+          "placeholder": "Ingresa el nombre",
+          "description": "Proporciona un nombre válido para identificar la colegio."
+        },
+        "cities": {
+          "label": "Ciudades",
+          "placeholder": "Selecciona la ciudad...",
+          "empty": "No se encontraron resultados.",
+          "description": "Asigna la ciudad a la colegio.",
+          "input": {
+            "placeholder": "Filtrar ciudades"
+          }
+        },
+        "infrastructureCode": {
+          "label": "Código de infraestructura",
+          "placeholder": "Ingresa el código",
+          "description": "Proporciona un código válido para la infraestructura."
+        },
+        "daneCode": {
+          "label": "Código DANE",
+          "placeholder": "Ingresa el código",
+          "description": "Proporciona un código válido para DANE."
+        },
+        "branchCode": {
+          "label": "Código de sucursal",
+          "placeholder": "Ingresa el código",
+          "description": "Proporciona un código válido para la sucursal."
+        },
+        "areaType": {
+          "label": "Tipo de área",
+          "placeholder": "Ingresa el tipo de área",
+          "description": "Proporciona un tipo válido para clasificar la colegio."
+        },
+        "sectorType": {
+          "label": "Tipo de sector",
+          "placeholder": "Ingresa el tipo de sector",
+          "description": "Proporciona un tipo válido para clasificar la colegio."
+        }
+      }
+    }
+  },
+  "professional": {
+    "layout": {
+      "title": "profesionales"
+    },
+    "buttons": {
+      "new": "Nuevo profesional"
+    },
+    "table": {
+      "columns": {
+        "idNum": "Número de identificación",
+        "identification": "Identificación",
+        "firstName": "Nombre",
+        "middleName": "Segundo nombre",
+        "lastName": "Apellido",
+        "secondLastName": "Segundo apellido",
+        "email": "Correo electrónico",
+        "isActive": "Está activo",
+        "activities": "# Actividades",
+        "createdAt": "Fecha de creación",
+        "actions": {
+          "info": "Información",
+          "edit": "Editar",
+          "delete": "Eliminar"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filtrar resultados..."
+          }
+        },
+        "view": {
+          "view": "Ver",
+          "toggleColumns": {
+            "key": "Alternar columnas",
+            "values": {
+              "firstName": "Nombre",
+              "middleName": "Segundo nombre",
+              "lastName": "Apellido",
+              "secondLastName": "Segundo apellido",
+              "email": "Correo electrónico",
+              "createdAt": "Fecha de creación",
+              "actions": "Acciones"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Información",
+      "columns": {
+        "identification": "Identificación",
+        "idNum": "Número de identificación",
+        "firstName": "Nombre",
+        "middleName": "Segundo nombre",
+        "lastName": "Apellido",
+        "secondLastName": "Segundo apellido",
+        "email": "Correo electrónico",
+        "address": "Dirección",
+        "phone": "Teléfono",
+        "isActive": "Está activo",
+        "activities": "# Actividades",
+        "createdAt": "Fecha de creación"
+      },
+      "tableActivities": {
+        "columns": {
+          "activity": "Actividad",
+          "school": "Colegio",
+          "qty": "# Participantes",
+          "status": "Estado"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filtrar resultados..."
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "Nuevo profesional",
+        "update": "Profesional"
+      },
+      "description": "Proporciona la información requerida y guarda cuando hayas terminado",
+      "buttons": {
+        "save": "Guardar"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "Esta acción es irreversible. El profesional y los registros relacionados no se podrán recuperar una vez eliminados.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        },
+        "unsaved": {
+          "title": "Cambios sin guardar",
+          "description": "Tienes cambios sin guardar. Guarda para persistir los cambios, de lo contrario puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "info": {
+        "heading": "Información primaria",
+        "description": "Esta sección incluye los campos principales requeridos para crear un nuevo profesional.",
+        "identification": {
+          "label": "Identificaciones",
+          "placeholder": "Seleccionar identificación...",
+          "empty": "No se encontraron resultados.",
+          "description": "Asignar identificación a la persona.",
+          "input": {
+            "placeholder": "Filtrar identificaciones"
+          }
+        },
+        "idNum": {
+          "label": "Número de identificación",
+          "placeholder": "Ingresa el número de identificación",
+          "description": "Proporciona un número de identificación."
+        },
+        "firstName": {
+          "label": "Nombre",
+          "placeholder": "Ingresa el nombre",
+          "description": "Proporciona un nombre."
+        },
+        "middleName": {
+          "label": "Segundo nombre",
+          "placeholder": "Ingresa el segundo nombre",
+          "description": "Proporciona un segundo nombre."
+        },
+        "lastName": {
+          "label": "Apellido",
+          "placeholder": "Ingresa el apellido",
+          "description": "Proporciona un apellido."
+        },
+        "secondLastName": {
+          "label": "Segundo apellido",
+          "placeholder": "Ingresa el segundo apellido",
+          "description": "Proporciona un segundo apellido."
+        },
+        "email": {
+          "label": "Correo electrónico",
+          "placeholder": "Ingresa el correo electrónico",
+          "description": "Proporciona un correo electrónico válido."
+        },
+        "address": {
+          "label": "Dirección",
+          "placeholder": "Ingresa la dirección",
+          "description": "Proporciona una dirección."
+        },
+        "phone": {
+          "label": "Teléfono",
+          "placeholder": "Ingresa el teléfono",
+          "description": "Proporciona un número de teléfono."
+        },
+        "isActive": {
+          "label": "Está activo",
+          "description": "Indica si el profesional está activo."
+        }
+      }
+    }
+  },
+  "child": {
+    "layout": {
+      "title": "niños"
+    },
+    "buttons": {
+      "guardian": "Tutores",
+      "new": "Nuevo niño"
+    },
+    "table": {
+      "columns": {
+        "idNum": "Número de Identificación",
+        "identification": "Identificación",
+        "firstName": "Nombre",
+        "middleName": "Segundo Nombre",
+        "lastName": "Apellido",
+        "secondLastName": "Segundo Apellido",
+        "guardian": "Tutor",
+        "identification": "Identificación",
+        "activities": "# Actividades",
+        "areaType": {
+          "label": "Tipo de Área",
+          "values": [
+            { "value": "urban", "label": "urbana" },
+            { "value": "rural", "label": "rural" }
+          ]
+        },
+        "createdAt": "Fecha de Creación",
+        "actions": {
+          "info": "Información",
+          "edit": "Editar",
+          "delete": "Eliminar"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filtrar resultados..."
+          }
+        },
+        "view": {
+          "view": "Ver",
+          "toggleColumns": {
+            "key": "Alternar columnas",
+            "values": {
+              "firstName": "Nombre",
+              "middleName": "Segundo Nombre",
+              "lastName": "Apellido",
+              "secondLastName": "Segundo Apellido",
+              "guardianId": "Tutor",
+              "identificationId": "Identificación",
+              "createdAt": "Fecha de Creación",
+              "actions": "Acciones"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Información",
+      "columns": {
+        "idNum": "Número de Identificación",
+        "identification": "Identificación",
+        "firstName": "Nombre",
+        "middleName": "Segundo Nombre",
+        "lastName": "Apellido",
+        "secondLastName": "Segundo Apellido",
+        "guardian": "Tutor",
+        "gender": "Género",
+        "birthDate": "Fecha de Nacimiento",
+        "affiliationDate": "Fecha de Afiliación",
+        "deactivationDate": "Fecha de Desactivación",
+        "country": "País",
+        "state": "Estado",
+        "city": "Ciudad",
+        "birthState": "Estado de Nacimiento",
+        "birthCity": "Ciudad de Nacimiento",
+        "educationLevel": "Nivel Educativo",
+        "schoolGrade": "Grado Escolar",
+        "areaType": "Tipo de Área",
+        "address": "Dirección",
+        "ethnicity": "Etnia",
+        "population": "Población",
+        "vulnerabilityFactor": "Factor de Vulnerabilidad",
+        "shift": "Turno",
+        "indigenousReserve": "Reserva Indígena",
+        "indigenousCommunity": "Comunidad Indígena",
+        "deactivationReason": "Razón de Desactivación",
+        "createdAt": "Fecha de Creación",
+        "activities": "Actividades"
+      },
+      "tableActivities": {
+        "columns": {
+          "activity": "Actividad",
+          "school": "Colegio",
+          "attendance": "Asistencia",
+          "status": "Estado"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filtrar resultados..."
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "Nuevo niño",
+        "update": "Niño"
+      },
+      "description": "Proporciona la información requerida y guarda cuando hayas terminado",
+      "buttons": {
+        "save": "Guardar"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "Esta acción es irreversible. ¡El niño y los registros relacionados no se podrán recuperar una vez eliminados!",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        },
+        "unsaved": {
+          "title": "Cambios sin guardar",
+          "description": "Tienes cambios sin guardar. Guarda para persistir los cambios, de lo contrario puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "info": {
+        "heading": "Información primaria",
+        "description": "Esta sección incluye los campos principales requeridos para crear un nuevo niño.",
+        "identification": {
+          "label": "Identificaciones",
+          "placeholder": "Seleccionar identificación...",
+          "empty": "No se encontraron resultados.",
+          "description": "Asignar identificación a la persona.",
+          "input": {
+            "placeholder": "Filtrar identificaciones"
+          }
+        },
+        "idNum": {
+          "label": "Número de Identificación",
+          "placeholder": "Ingrese el Número de Identificación",
+          "description": "Proporcione un número de identificación."
+        },
+        "firstName": {
+          "label": "Nombre",
+          "placeholder": "Ingrese el nombre",
+          "description": "Proporcione un nombre válido para identificar al niño."
+        },
+        "lastName": {
+          "label": "Apellido",
+          "placeholder": "Ingrese el apellido",
+          "description": "Proporcione un apellido válido para identificar al niño."
+        },
+        "middleName": {
+          "label": "Segundo Nombre",
+          "placeholder": "Ingrese el segundo nombre",
+          "description": "Proporcione un segundo nombre válido para identificar al niño."
+        },
+        "secondLastName": {
+          "label": "Segundo Apellido",
+          "placeholder": "Ingrese el segundo apellido",
+          "description": "Proporcione un segundo apellido válido para identificar al niño."
+        },
+        "kinship": {
+          "label": "Parentesco",
+          "placeholder": "Seleccionar parentesco...",
+          "empty": "No se encontraron resultados.",
+          "description": "Asignar parentesco a la persona.",
+          "input": {
+            "placeholder": "Filtrar parentesco"
+          }
+        },
+        "guardian": {
+          "label": "Tutor",
+          "placeholder": "Seleccionar tutor...",
+          "empty": "No se encontraron resultados.",
+          "description": "Asignar tutor a la persona.",
+          "input": {
+            "placeholder": "Filtrar tutores"
+          }
+        },
+        "deactivationReason": {
+          "label": "Razón de Desactivación",
+          "placeholder": "Ingrese la Razón de Desactivación",
+          "description": "Proporcione una razón."
+        },
+        "address": {
+          "label": "Dirección",
+          "placeholder": "Ingrese la Dirección",
+          "description": "Proporcione una Dirección."
+        },
+        "birthDate": {
+          "label": "Fecha de Nacimiento",
+          "placeholder": "Ingrese la Fecha de Nacimiento",
+          "description": "Proporcione una Fecha de Nacimiento."
+        },
+        "affiliationDate": {
+          "label": "Fecha de Afiliación",
+          "placeholder": "Ingrese la Fecha de Afiliación",
+          "description": "Proporcione una Fecha de Afiliación."
+        },
+        "deactivationDate": {
+          "label": "Fecha de Desactivación",
+          "placeholder": "Ingrese la Fecha de Desactivación",
+          "description": "Proporcione una Fecha de Desactivación."
+        },
+        "areaType": {
+          "label": "Tipo de Área",
+          "placeholder": "Ingrese el Tipo de Área",
+          "description": "Proporcione un Tipo de Área."
+        },
+        "beneficiaryType": {
+          "label": "Tipo de Beneficiario",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "gender": {
+          "label": "Género",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "country": {
+          "label": "País",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "birthState": {
+          "label": "Estado de Nacimiento",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "birthCity": {
+          "label": "Ciudad de Nacimiento",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "state": {
+          "label": "Estado",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "city": {
+          "label": "Ciudad",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "educationLevel": {
+          "label": "Nivel Educativo",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "schoolGrade": {
+          "label": "Grado Escolar",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "ethnicity": {
+          "label": "Etnia",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "population": {
+          "label": "Población",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "vulnerabilityFactor": {
+          "label": "Factor de Vulnerabilidad",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "shift": {
+          "label": "Turno",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "indigenousReserve": {
+          "label": "Reserva Indígena",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "indigenousCommunity": {
+          "label": "Comunidad Indígena",
+          "placeholder": "Seleccionar...",
+          "empty": "No se encontraron resultados.",
+          "description": "",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        }
+      }
+    }
+  },
+  "guardian": {
+    "layout": {
+      "title": "Tutores",
+      "back": "Niños"
+    },
+    "buttons": {
+      "new": "Nuevo tutor"
+    },
+    "table": {
+      "columns": {
+        "idNum": "Número de Identificación",
+        "identification": "Identificación",
+        "firstName": "Nombre",
+        "middleName": "Segundo Nombre",
+        "lastName": "Apellido",
+        "secondLastName": "Segundo Apellido",
+        "children": "Niños",
+        "phone": "Teléfono",
+        "createdAt": "Fecha de Creación",
+        "actions": {
+          "info": "Información",
+          "edit": "Editar",
+          "delete": "Eliminar"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filtrar resultados..."
+          }
+        },
+        "view": {
+          "view": "Ver",
+          "toggleColumns": {
+            "key": "Alternar columnas",
+            "values": {
+              "firstName": "Nombre",
+              "middleName": "Segundo Nombre",
+              "lastName": "Apellido",
+              "secondLastName": "Segundo Apellido",
+              "identificationId": "Identificación",
+              "phone": "Teléfono",
+              "createdAt": "Fecha de Creación",
+              "actions": "Acciones"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Información",
+      "columns": {
+        "idNum": "Número de Identificación",
+        "identification": "Identificación",
+        "firstName": "Nombre",
+        "middleName": "Segundo Nombre",
+        "lastName": "Apellido",
+        "phone": "Teléfono",
+        "secondLastName": "Segundo Apellido",
+        "children": "Niños",
+        "createdAt": "Fecha de Creación"
+      },
+      "tableChildren": {
+        "columns": {
+          "idNum": "Número de Identificación",
+          "firstName": "Nombre",
+          "middleName": "Segundo Nombre",
+          "lastName": "Apellido",
+          "secondLastName": "Segundo Apellido"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filtrar resultados..."
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "Nuevo tutor",
+        "update": "Tutor"
+      },
+      "description": "Proporciona la información requerida y guarda cuando hayas terminado",
+      "buttons": {
+        "save": "Guardar"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "Esta acción es irreversible. ¡El niño y los registros relacionados no se podrán recuperar una vez eliminados!",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        },
+        "unsaved": {
+          "title": "Cambios sin guardar",
+          "description": "Tienes cambios sin guardar. Guarda para persistir los cambios, de lo contrario puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "info": {
+        "heading": "Información primaria",
+        "description": "Esta sección incluye los campos principales requeridos para crear un nuevo niño.",
+        "identification": {
+          "label": "Identificaciones",
+          "placeholder": "Seleccionar identificación...",
+          "empty": "No se encontraron resultados.",
+          "description": "Asignar identificación a la persona.",
+          "input": {
+            "placeholder": "Filtrar identificaciones"
+          }
+        },
+        "idNum": {
+          "label": "Número de Identificación",
+          "placeholder": "Ingrese el Número de Identificación",
+          "description": "Proporcione un número de identificación."
+        },
+        "firstName": {
+          "label": "Nombre",
+          "placeholder": "Ingrese el nombre",
+          "description": "Proporcione un nombre válido para identificar al niño."
+        },
+        "lastName": {
+          "label": "Apellido",
+          "placeholder": "Ingrese el apellido",
+          "description": "Proporcione un apellido válido para identificar al niño."
+        },
+        "middleName": {
+          "label": "Segundo Nombre",
+          "placeholder": "Ingrese el segundo nombre",
+          "description": "Proporcione un segundo nombre válido para identificar al niño."
+        },
+        "secondLastName": {
+          "label": "Segundo Apellido",
+          "placeholder": "Ingrese el segundo apellido",
+          "description": "Proporcione un segundo apellido válido para identificar al niño."
+        },
+        "phone": {
+          "label": "Teléfono",
+          "placeholder": "Ingrese el teléfono",
+          "description": "Proporcione un teléfono válido."
+        }
+      }
+    }
+  },
+  "resource": {
+    "layout": {
+      "title": "recursos"
+    },
+    "buttons": {
+      "suppliers": "Proveedores",
+      "new": "Nuevo recurso"
+    },
+    "table": {
+      "columns": {
+        "name": "Nombre",
+        "supplier": "Proveedor",
+        "classification": "Clasificación",
+        "price": "Precio",
+        "type": "Tipo",
+        "usageType": "Tipo de Uso",
+        "inventory": "Inventario",
+        "createdAt": "Fecha de creación",
+        "actions": {
+          "edit": "Editar",
+          "delete": "Eliminar"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filtrar resultados..."
+          }
+        },
+        "view": {
+          "view": "Ver",
+          "toggleColumns": {
+            "key": "Alternar columnas",
+            "values": {
+              "name": "Nombre",
+              "supplierId": "Proveedor",
+              "resourceClassificationId": "Clasificación",
+              "createdAt": "Fecha de creación",
+              "actions": "Acciones"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Información",
+      "columns": {
+        "name": "Nombre",
+        "supplier": "Proveedor",
+        "classification": "Clasificación",
+        "price": "Precio",
+        "type": "Tipo",
+        "usageType": "Tipo de Uso",
+        "inventory": "Inventario",
+        "createdAt": "Fecha de creación"
+      },
+      "tableInventory": {
+        "columns": {
+          "type": "Tipo",
+          "orderNumber": "Número de pedido",
+          "activity": "Actividad",
+          "school": "Colegio",
+          "qty": "Cantidad",
+          "status": "Estado",
+          "createdAt": "Fecha de creación"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filtrar resultados..."
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "Nuevo recurso",
+        "update": "Recurso"
+      },
+      "description": "Proporcione la información requerida y guarde cuando haya terminado",
+      "buttons": {
+        "save": "Guardar"
+      },
+      "tabs": {
+        "main": "Principal",
+        "suppliers": "Proveedores"
+      },
+      "dialogs": {
+        "create": {
+          "title": "Nueva etiqueta",
+          "description": "Complete los campos y haga clic en guardar cuando haya terminado."
+        },
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "¡Esta acción es irreversible! El recurso y los registros relacionados no serán recuperables una vez eliminados.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        },
+        "unsaved": {
+          "title": "Cambios no guardados",
+          "description": "Tienes cambios no guardados. Guarda para conservar los cambios, de lo contrario, puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "info": {
+        "heading": "Información principal",
+        "description": "Esta sección incluye los campos principales requeridos para crear un nuevo recurso.",
+        "name": {
+          "label": "Nombre",
+          "placeholder": "Ingrese el nombre",
+          "description": "Proporcione un nombre válido para identificar el recurso."
+        },
+        "price": {
+          "label": "Precio",
+          "placeholder": "Ingrese el precio",
+          "description": "Proporcione un precio válido."
+        },
+        "type": {
+          "label": "Tipo",
+          "value": {
+            "internal": "interno",
+            "external": "externo"
+          }
+        },
+        "usageType": {
+          "label": "Tipo de uso",
+          "value": {
+            "general": "general",
+            "individual": "individual"
+          }
+        },
+        "suppliers": {
+          "label": "Proveedores",
+          "placeholder": "Seleccione un proveedor...",
+          "empty": "No se encontraron resultados.",
+          "description": "Asigne un proveedor al recurso.",
+          "input": {
+            "placeholder": "Filtrar proveedores"
+          }
+        },
+        "classifications": {
+          "createNew": "Crear nuevas clasificaciones",
+          "label": "Clasificaciones",
+          "placeholder": "Seleccione una clasificación...",
+          "empty": "No se encontraron resultados.",
+          "description": "Asigne una clasificación al recurso.",
+          "input": {
+            "placeholder": "Filtrar clasificaciones"
+          }
+        }
+      },
+      "suppliers": {
+        "heading": "Proveedores",
+        "description": "Asigne proveedores al recurso.",
+        "dialog": {
+          "trigger": "Agregar proveedor",
+          "title": "Agregar proveedor al recurso",
+          "description": "Complete los campos a continuación y guarde cuando haya terminado",
+          "cancelButton": "Cancelar",
+          "addButton": "Agregar"
+        },
+        "table": {
+          "columns": {
+            "supplier": "Proveedor",
+            "actions": {
+              "edit": "Editar",
+              "delete": "Eliminar"
+            }
+          },
+          "empty": "No hay entradas"
+        },
+        "supplierField": {
+          "label": "Nombre del proveedor",
+          "placeholder": "Elija un proveedor de las opciones",
+          "description": "Este es el proveedor que se agregará al recurso",
+          "commandEmpty": "No se encontraron resultados",
+          "commandPlaceholder": "Buscar proveedor..."
+        }
+      },
+      "resourceClassification": {
+        "heading": "Nueva etiqueta",
+        "description": "Complete los campos y haga clic en guardar cuando haya terminado.",
+        "name": {
+          "label": "Nombre",
+          "placeholder": "Ingrese el nombre",
+          "description": "Proporcione contexto sobre lo que esta etiqueta visualiza o modifica"
+        },
+        "desc": {
+          "label": "Descripción",
+          "placeholder": "Ingrese la descripción",
+          "description": "Proporcione contexto para ayudar a las etiquetas a entender este permiso y el efecto que tendrá"
+        },
+        "buttons": {
+          "cancel": "Cancelar",
+          "save": "Guardar"
+        }
+      }
+    }
+  },
+  "supplier": {
+    "layout": {
+      "title": "Proveedores",
+      "back": "Recursos"
+    },
+    "buttons": {
+      "new": "Nuevo proveedor"
+    },
+    "table": {
+      "columns": {
+        "name": "Nombre",
+        "resources": "Recursos",
+        "createdAt": "Fecha de creación",
+        "actions": {
+          "edit": "Editar",
+          "delete": "Eliminar"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filtrar resultados..."
+          }
+        },
+        "view": {
+          "view": "Ver",
+          "toggleColumns": {
+            "key": "Alternar columnas",
+            "values": {
+              "name": "Nombre",
+              "createdAt": "Fecha de creación",
+              "actions": "Acciones"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Información",
+      "columns": {
+        "name": "Nombre",
+        "resources": "# Recursos",
+        "createdAt": "Fecha de creación"
+      },
+      "tableResources": {
+        "columns": {
+          "name": "Nombre",
+          "price": "Precio",
+          "createdAt": "Fecha de creación"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filtrar resultados..."
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "Nuevo proveedor",
+        "update": "Proveedor"
+      },
+      "description": "Proporcione la información requerida y guarde cuando haya terminado",
+      "buttons": {
+        "save": "Guardar"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "¡Esta acción es irreversible! El recurso y los registros relacionados no serán recuperables una vez eliminados.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        },
+        "unsaved": {
+          "title": "Cambios no guardados",
+          "description": "Tienes cambios no guardados. Guarda para conservar los cambios, de lo contrario, puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "info": {
+        "heading": "Información principal",
+        "description": "Esta sección incluye los campos principales requeridos para crear un nuevo proveedor.",
+        "name": {
+          "label": "Nombre",
+          "placeholder": "Ingrese el nombre",
+          "description": "Proporcione un nombre válido para identificar el recurso."
+        }
+      }
+    }
+  },
+  "inventoryTransaction": {
+    "layout": {
+      "title": "Transacciones de inventario"
+    },
+    "buttons": {
+      "new": "Nueva transacción"
+    },
+    "statuses": {
+      "pending": "Pendiente",
+      "confirmed": "Confirmado",
+      "rejected": "Rechazado"
+    },
+    "types": {
+      "stock": "Stock",
+      "restock": "Reposición",
+      "consume": "Consumir",
+      "adjustment": "Ajuste"
+    },
+    "table": {
+      "columns": {
+        "status": "Estado",
+        "resources": "# Recursos",
+        "note": "Nota",
+        "supplierInvoiceNumber": "Proveedor INV#",
+        "orderNumber": "Número de pedido",
+        "activity": "Actividad",
+        "school": "Colegio",
+        "createdAt": "Fecha de creación",
+        "type": {
+          "label": "Tipo",
+          "values": [
+            { "value": "stock", "label": "stock" },
+            { "value": "restock", "label": "reposición" },
+            { "value": "consume", "label": "consumir" },
+            { "value": "adjustment", "label": "ajuste" }
+          ]
+        },
+        "status": {
+          "label": "Estado",
+          "values": [
+            { "value": "pending", "label": "pendiente" },
+            { "value": "confirmed", "label": "confirmado" },
+            { "value": "rejected", "label": "rechazado" }
+          ]
+        },
+        "actions": {
+          "edit": "Editar",
+          "addInvoice": "Añadir factura",
+          "approve": "Aprobar",
+          "deny": "Rechazar",
+          "delete": "Eliminar"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filtrar resultados..."
+          }
+        },
+        "view": {
+          "view": "Ver",
+          "toggleColumns": {
+            "key": "Alternar columnas",
+            "values": {
+              "type": "Tipo",
+              "note": "Nota",
+              "lastName": "Apellido",
+              "supplierInvoiceNumber": "Proveedor INV#",
+              "createdAt": "Fecha de creación",
+              "actions": "Acciones"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Información",
+      "columns": {
+        "type": "Tipo",
+        "note": "Nota",
+        "rejectNote": "Nota de rechazo",
+        "approveNote": "Nota de aprobación",
+        "status": "Estado",
+        "supplierInvoiceNumber": "Proveedor INV#",
+        "orderNumber": "Número de pedido",
+        "activity": "Actividad",
+        "school": "Colegio",
+        "resources": "# Recursos",
+        "createdAt": "Fecha de creación"
+      },
+      "tableResource": {
+        "columns": {
+          "name": "Nombre",
+          "qty": "Cantidad",
+          "createdAt": "Fecha de creación"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filtrar resultados..."
+            }
+          }
+        }
+      }
+    },
+    "addInvoice": {
+      "title": "Añadir factura",
+      "content": "Añadir el número de factura a la transacción.",
+      "invoiceNumber": "Factura #",
+      "button": "Añadir"
+    },
+    "deny": {
+      "title": "Denegado",
+      "content": "La transacción será rechazada.",
+      "note": "Nota",
+      "button": "Rechazar"
+    },
+    "approve": {
+      "title": "Aprobado",
+      "content": "La transacción será aprobada.",
+      "note": "Nota",
+      "button": "Aprobar"
+    },
+    "form": {
+      "headings": {
+        "new": "Nueva transacción",
+        "update": "Transacción"
+      },
+      "description": "Proporcione la información requerida y guarde cuando haya terminado",
+      "buttons": {
+        "save": "Guardar"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "¿Estás seguro?",
+          "description": "¡Esta acción es irreversible! La transacción y los registros relacionados no serán recuperables una vez eliminados.",
+          "buttons": {
+            "cancel": "Cancelar",
+            "continue": "Continuar"
+          }
+        },
+        "unsaved": {
+          "title": "Cambios no guardados",
+          "description": "Tienes cambios no guardados. Guarda para conservar los cambios, de lo contrario, puedes descartar el mensaje.",
+          "buttons": {
+            "save": "Guardar",
+            "discard": "Descartar"
+          }
+        }
+      },
+      "tabs": {
+        "main": "Principal",
+        "professionals": "Profesionales",
+        "resources": "Recursos"
+      },
+      "info": {
+        "heading": "Información principal",
+        "description": "Esta sección incluye los campos principales requeridos para crear una nueva transacción.",
+        "type": {
+          "label": "Tipo",
+          "placeholder": "Ingrese el tipo",
+          "description": "Proporcione un tipo válido para clasificar la transacción."
+        },
+        "note": {
+          "label": "Nota",
+          "placeholder": "Ingrese la nota",
+          "description": "Proporcione una nota/memo para esta transacción"
+        },
+        "status": {
+          "label": "Estado",
+          "placeholder": "Seleccione el estado...",
+          "description": "Asigne un estado al plan mientras avanza por los departamentos."
+        },
+        "supplierInvoiceNumber": {
+          "label": "Proveedor INV#",
+          "placeholder": "Ingrese el número de factura del proveedor",
+          "description": "Esto sirve como referencia para vincular esta transacción con la factura original del proveedor."
+        },
+        "orderNumber": {
+          "label": "Número de pedido",
+          "placeholder": "Ingrese el número de pedido",
+          "description": "Esto sirve como referencia para vincular esta transacción con el pedido de la empresa."
+        }
+      },
+      "resources": {
+        "heading": "Recursos",
+        "description": "Asigne recursos a la transacción.",
+        "dialog": {
+          "trigger": "Añadir recurso",
+          "title": "Añadir recurso a la transacción",
+          "description": "Complete los campos a continuación y guarde cuando haya terminado",
+          "cancelButton": "Cancelar",
+          "addButton": "Añadir"
+        },
+        "table": {
+          "columns": {
+            "resource": "Recurso",
+            "qty": "Cantidad",
+            "actions": {
+              "edit": "Editar",
+              "delete": "Eliminar"
+            }
+          },
+          "empty": "No hay entradas"
+        },
+        "resourceField": {
+          "label": "Nombre del recurso",
+          "placeholder": "Elija un recurso de las opciones",
+          "description": "Este es el recurso que se añadirá a la transacción",
+          "commandEmpty": "No se encontraron resultados",
+          "commandPlaceholder": "Buscar recurso..."
+        },
+        "qtyField": {
+          "label": "Cantidad",
+          "placeholder": "Ingrese la cantidad de recursos",
+          "description": "Esto representa los recursos"
+        }
+      }
+    }
+  },
+  "reports": {
+    "layout": {
+      "title": "Informes"
+    },
+    "buttons": {
+      "report": "Informe"
+    },
+    "tabs": {
+      "coverage": {
+        "title": "Cobertura del informe",
+        "tab": "Cobertura"
+      },
+      "microdato": {
+        "tab": "Microdato",
+        "title": "Informe Microdato"
+      },
+      "resources": {
+        "tab": "Recursos",
+        "title": "Informate Recursos"
+      }
+    },
+    "form": {
+      "fields": {
+        "program": {
+          "label": "Programa",
+          "placeholder": "Seleccionar ...",
+          "empty": "No se encontraron resultados.",
+          "input": {
+            "placeholder": "Filtrar"
+          }
+        },
+        "year": {
+          "label": "Año",
+          "placeholder": "Ingrese el año"
+        }
+      }
+    }
+  }
+}

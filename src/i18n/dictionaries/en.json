@@ -1,0 +1,3114 @@
+{
+  "misc": {
+    "themeToggle": {
+      "key": "Toggle theme",
+      "values": {
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+      }
+    },
+    "settings": {
+      "dropdown": {
+        "logout": "Logout"
+      }
+    },
+    "table": {
+      "pagination": {
+        "rowsPerPage": "Rows per page",
+        "pageOf": {
+          "page": "Page",
+          "of": "of"
+        }
+      }
+    },
+    "dialogs": {
+      "delete": {
+        "title": "Are you sure?",
+        "description": "This action is irreversible. Entity and related records won&apos;t be recoverable once deleted!",
+        "buttons": {
+          "cancel": "Cancel",
+          "continue": "Continue"
+        }
+      },
+      "unsaved": {
+        "title": "Unsaved changes",
+        "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+        "buttons": {
+          "save": "Save",
+          "discard": "Discard"
+        }
+      },
+      "report": {
+        "title": "Report",
+        "fields": {
+          "startDate": {
+            "label": "Start Date",
+            "text": "Pick a date"
+          },
+          "endDate": {
+            "label": "End Date",
+            "text": "Pick a date"
+          }
+        },
+        "buttons": {
+          "report": "Report"
+        }
+      }
+    },
+    "buttons": {
+      "save": "Save",
+      "report": "Report"
+    },
+    "nav": {
+      "dashboard": "Dashboard",
+      "schools": "Schools",
+      "resources": "Resources",
+      "programs": "Programs",
+      "professionals": "Professionals",
+      "children": "Children",
+      "plans": "Plans",
+      "classification": "Classification",
+      "inventoryTransactions": "Inventory Transactions",
+      "reports": "Reports",
+      "activities": "Activities"
+    }
+  },
+  "program": {
+    "layout": {
+      "title": "programs"
+    },
+    "buttons": {
+      "new": "New program",
+      "goToPlans": "Go to plans"
+    },
+    "table": {
+      "columns": {
+        "name": "Name",
+        "description": "Description",
+        "createdAt": "Created Date",
+        "actions": {
+          "open": "Open",
+          "edit": "Edit",
+          "delete": "Delete",
+          "createModality": "Create modality",
+          "openModalities": "Open modalities"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "name": "Name",
+              "description": "Description"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "description": "Inpect Program details as well as its associated data",
+      "tabs": {
+        "primaryInformation": "Primary Information",
+        "modalities": "Modalities"
+      },
+      "primaryInformationTab": {
+        "fields": {
+          "id": "Id",
+          "name": "Name",
+          "description": "Description",
+          "createdDate": "Created Date"
+        }
+      },
+      "modalitiesTab": {
+        "table": {
+          "columns": {
+            "name": "Name",
+            "description": "Description",
+            "createdAt": "Created Date"
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New program",
+        "update": "Program"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Program and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new program.",
+        "nameField": {
+          "label": "Name",
+          "placeholder": "Enter name",
+          "description": "Provide a valid name."
+        },
+        "descriptionField": {
+          "label": "Description",
+          "placeholder": "Enter description",
+          "description": "Describe in a few words the purpose of this program."
+        }
+      }
+    }
+  },
+  "modality": {
+    "layout": {
+      "title": "modalities"
+    },
+    "buttons": {
+      "new": "New modality",
+      "goToPrograms": "Go to programs"
+    },
+    "table": {
+      "columns": {
+        "name": "Name",
+        "description": "Description",
+        "program": "Program",
+        "createdAt": "Created Date",
+        "actions": {
+          "open": "Open",
+          "edit": "Edit",
+          "delete": "Delete"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "name": "Name",
+              "description": "Description",
+              "programId": "Program"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "description": "Inpect Modality details as well as its associated data",
+      "tabs": {
+        "primaryInformation": "Primary Information"
+      },
+      "primaryInformationTab": {
+        "fields": {
+          "id": "Id",
+          "name": "Name",
+          "description": "Description",
+          "program": "Program",
+          "createdDate": "Created Date"
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New modality",
+        "update": "Modality"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Modality and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new modality.",
+        "nameField": {
+          "label": "Name",
+          "placeholder": "Enter name",
+          "description": "Provide a valid name."
+        },
+        "descriptionField": {
+          "label": "Description",
+          "placeholder": "Enter description",
+          "description": "Describe in a few words the purpose of this program."
+        },
+        "modalityType": {
+          "label": "Modality Type",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        }
+      }
+    }
+  },
+  "planModalityActivity": {
+    "misc": {
+      "dialogs": {
+        "updateStatus": {
+          "title": "Are you sure you want to update the status?",
+          "description": "Ensure to review your selection before proceeding with the update as this will move the plan forward to the next step.",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        }
+      }
+    },
+    "layout": {
+      "title": "Activities",
+      "breadCrumbList": {
+        "plans": "Plans",
+        "activities": "Activities"
+      }
+    },
+    "buttons": {
+      "new": "New plan activity",
+      "goToPlans": "Go to plans",
+      "reject": "Reject",
+      "sendToReview": "Send to Review",
+      "review": "Review",
+      "approve": "Approve"
+    },
+    "statuses": {
+      "draft": "Draft",
+      "pending review": "Pending Review",
+      "reviewed": "Reviewed",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "table": {
+      "columns": {
+        "name": "Name",
+        "description": "Description",
+        "planModalityId": "Modality",
+        "requiredProofOfCompletionCount": "# Proof",
+        "schoolsTotal": "Schools Total",
+        "participantsTotal": "Participants Total",
+        "resourcesTotal": "Resources Total",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "actions": {
+          "open": "Open",
+          "edit": "Edit",
+          "delete": "Delete"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "name": "Name",
+              "description": "Description",
+              "planModalityId": "Modality",
+              "requiredProofOfCompletionCount": "Required proof of completion",
+              "startDate": "Start Date",
+              "endDate": "End Date"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "description": "Inpect Activity details as well as its associated data",
+      "tabs": {
+        "primaryInformation": "Primary Information",
+        "schools": "Schools",
+        "resources": "Resources",
+        "proofFiles": "Proof Files"
+      },
+      "primaryInformationTab": {
+        "fields": {
+          "id": "Id",
+          "name": "Name",
+          "description": "Description",
+          "requiredProofOfCompletionCount": "Proof Of Completion Count",
+          "planModality": "Modality",
+          "createdDate": "Created Date",
+          "startDate": "Start Date",
+          "endDate": "End Date"
+        }
+      },
+      "schoolsTab": {
+        "table": {
+          "columns": {
+            "name": "Name",
+            "participantsQty": "Participants Qty",
+            "statuses": {
+              "label": "Status",
+              "values": [
+                { "value": "pending", "label": "pending" },
+                { "value": "planning", "label": "planning" },
+                { "value": "requested_resources", "label": "requested resources" },
+                { "value": "confirmed_resources", "label": "confirmed resources" },
+                { "value": "active", "label": "active" },
+                { "value": "completed", "label": "completed" },
+                { "value": "verified", "label": "verified" },
+                { "value": "rejected", "label": "rejected" }
+              ]
+            }
+          }
+        }
+      },
+      "resourcesTab": {
+        "table": {
+          "columns": {
+            "name": "Name",
+            "qty": "Qty"
+          }
+        }
+      },
+      "proofFiles": {
+        "table": {
+          "toolbar": {
+            "searchFilter": {
+              "input": {
+                "placeholder": "Filter results..."
+              }
+            }
+          },
+          "columns": {
+            "classification": "Classification"
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New Plan Modality Activity",
+        "update": "Plan Modality Activity"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Plan and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "tabs": {
+        "primaryInformation": "Primary Information",
+        "schools": "Schools",
+        "resources": "Resources",
+        "proofFiles": "Proof Files"
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new plan modality activity.",
+        "planModalityField": {
+          "label": "Modality",
+          "placeholder": "Select a modality for from plan",
+          "description": "Select the modality this activity belongs to."
+        },
+        "serviceAipiField": {
+          "label": "Services Aipi",
+          "placeholder": "Select a service for from plan",
+          "description": "Select the service this activity belongs to."
+        },
+        "nameField": {
+          "label": "Name",
+          "placeholder": "Enter name",
+          "description": "Provide a valid name."
+        },
+        "descriptionField": {
+          "label": "Description",
+          "placeholder": "Enter description",
+          "description": "Describe in a few words the purpose of this activity."
+        },
+        "requiredProofOfCompletionCountField": {
+          "label": "Proof of completion",
+          "placeholder": "Enter number of required proof of completion",
+          "description": "This number represents the number of proofs required to complete activity."
+        },
+        "startDateField": {
+          "label": "Start date",
+          "placeholder": "Enter start date",
+          "description": "Provide a start date for the activity"
+        },
+        "endDateField": {
+          "label": "End date",
+          "placeholder": "Enter end date",
+          "description": "Provide a end date for the activity"
+        }
+      },
+      "schools": {
+        "heading": "Schools",
+        "description": "Assign schools where activity will take place.",
+        "dialog": {
+          "trigger": "Add school",
+          "title": "Add school to activity",
+          "description": "Fill in the fields below and save when you're done",
+          "cancelButton": "Cancel",
+          "addButton": "Add",
+          "updateButton": "Update"
+        },
+        "table": {
+          "columns": {
+            "name": "Name",
+            "participantsQty": "Participants Qty",
+            "status": "Status",
+            "actions": {
+              "edit": "Edit",
+              "delete": "Delete"
+            }
+          },
+          "empty": "No entries"
+        },
+        "schoolField": {
+          "label": "School name",
+          "placeholder": "Choose a school from options",
+          "description": "This is the location where the activity will be taking place",
+          "commandEmpty": "No results found",
+          "commandPlaceholder": "Search for school..."
+        },
+        "participantsQtyField": {
+          "label": "Number of participants",
+          "placeholder": "Enter the number of participants at this location",
+          "description": "This represents the number of participants/children attending the activity"
+        },
+        "status": {
+          "label": "Status",
+          "placeholder": "Select a status from the options",
+          "description": "Track the status for this school as we move the plan through all stages"
+        }
+      },
+      "resources": {
+        "heading": "Resources",
+        "description": "Assign resources where activity will take place.",
+        "dialog": {
+          "trigger": "Add resource",
+          "title": "Add resource to activity",
+          "description": "Fill in the fields below and save when you're done",
+          "cancelButton": "Cancel",
+          "addButton": "Add",
+          "updateButton": "Update"
+        },
+        "table": {
+          "columns": {
+            "name": "Name",
+            "qty": "Qty",
+            "actions": {
+              "edit": "Edit",
+              "delete": "Delete"
+            }
+          },
+          "empty": "No entries"
+        },
+        "resourceField": {
+          "label": "Resource name",
+          "placeholder": "Choose a resource from options",
+          "description": "Resource needed in order to fulfill the activity",
+          "commandEmpty": "No results found",
+          "commandPlaceholder": "Search for resource..."
+        },
+        "qtyField": {
+          "label": "quantities",
+          "placeholder": "Enter the quantity needed for this resource",
+          "description": "This represents the quantity for a single resource needed for the activity"
+        }
+      },
+      "proofFiles": {
+        "heading": "Proof Files",
+        "description": "Assign proof files for activity.",
+        "dialog": {
+          "trigger": "Add proof file",
+          "title": "Add proof file to activity",
+          "description": "Fill in the fields below and save when you're done",
+          "cancelButton": "Cancel",
+          "addButton": "Add",
+          "updateButton": "Update"
+        },
+        "table": {
+          "columns": {
+            "proofFileClassification": "Classification",
+            "planModalityActivity": "Activity",
+            "actions": {
+              "edit": "Edit",
+              "delete": "Delete"
+            }
+          },
+          "empty": "No entries"
+        },
+        "proofFileClassificationField": {
+          "label": "Classification name",
+          "placeholder": "Choose a classification from options",
+          "description": "Classification needed in order to group the files",
+          "commandEmpty": "No results found",
+          "commandPlaceholder": "Search for classification..."
+        },
+        "classification": {
+          "buttons": {
+            "new": "Add new classification"
+          },
+          "dialog": {
+            "trigger": "Add classification",
+            "title": "Add new classification",
+            "description": "Fill in the fields below and save when you're done",
+            "cancelButton": "Cancel",
+            "addButton": "Create classification",
+            "viewButton": "View classifications",
+            "updateButton": "Update"
+          },
+          "form": {
+            "heading": "New classification",
+            "description": "Fill in the inputs and click save when you're done.",
+            "nameField": {
+              "label": "name",
+              "placeholder": "Name proof file classification",
+              "description": "Use this name to identifiy each classification"
+            },
+            "buttons": {
+              "cancel": "Cancel",
+              "save": "Save"
+            }
+          }
+        }
+      }
+    }
+  },
+  "plan": {
+    "layout": {
+      "title": "plans"
+    },
+    "buttons": {
+      "new": "New plan",
+      "actions": "Actions",
+      "newPlan": "New plan",
+      "newProgram": "New program",
+      "goToPrograms": "Go to programs"
+    },
+    "table": {
+      "columns": {
+        "year": "Year",
+        "longTermObjective": "Long-term Objective",
+        "shortTermObjective": "Short-term Objective",
+        "justification": "Justification",
+        "description": "Description",
+        "rejectionNote": "Rejection Note",
+        "program": "Program",
+        "status": {
+          "label": "Status",
+          "values": [
+            { "value": "draft", "label": "draft" },
+            { "value": "pending review", "label": "pending review" },
+            { "value": "reviewed", "label": "reviewed" },
+            { "value": "approved", "label": "approved" },
+            { "value": "rejected", "label": "rejected" }
+          ]
+        },
+        "createdAt": "Created Date",
+        "actions": {
+          "open": "Open",
+          "edit": "Edit",
+          "delete": "Delete",
+          "createActivity": "Create an activity",
+          "updateStatus": "Update status",
+          "viewActivities": "View activities"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "year": "Year",
+              "programId": "Program",
+              "longTermObjective": "Long-term Objective",
+              "shortTermObjective": "Short-term Objective",
+              "justification": "Justification",
+              "description": "Description",
+              "rejectionNote": "Rejection Note",
+              "status": "Status"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "description": "Inpect Plan details as well as its associated data",
+      "tabs": {
+        "primaryInformation": "Primary Information"
+      },
+      "primaryInformationTab": {
+        "fields": {
+          "id": "Id",
+          "year": "Year",
+          "description": "Description",
+          "longTermObjective": "Long-term Objective",
+          "shortTermObjective": "Short-term Objective",
+          "justification": "Justification",
+          "status": "Status",
+          "rejectionNote": "Rejection Note",
+          "program": "Program",
+          "createdDate": "Created Date"
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New plan",
+        "update": "Plan"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Plan and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new plan.",
+        "programField": {
+          "label": "Program",
+          "placeholder": "Select a program...",
+          "description": "Assign the program this plan belongs to"
+        },
+        "yearField": {
+          "label": "Year",
+          "placeholder": "Enter year",
+          "description": "Provide a valid year."
+        },
+        "statusField": {
+          "label": "Status",
+          "placeholder": "Select status...",
+          "description": "Assign a status to the plan as plan moves along departments."
+        },
+        "descriptionField": {
+          "label": "Description",
+          "placeholder": "Enter description",
+          "description": "Provide a description."
+        },
+        "longTermObjectiveField": {
+          "label": "Long-term Objective",
+          "placeholder": "Enter a long-term objective",
+          "description": "Provide a long-term objective."
+        },
+        "shortTermObjectiveField": {
+          "label": "Short-term Objective",
+          "placeholder": "Enter a short-term objective",
+          "description": "Provide a short-term objective."
+        },
+        "justificationField": {
+          "label": "Justification",
+          "placeholder": "Enter a justification",
+          "description": "Provide a justification."
+        },
+        "rejectionNoteField": {
+          "label": "Rejection Note",
+          "placeholder": "Enter a rejection note",
+          "description": "Provide a rejection note."
+        }
+      }
+    }
+  },
+  "proofFileClassification": {
+    "layout": {
+      "title": "Proof file classifications"
+    },
+    "buttons": {
+      "new": "New classification",
+      "actions": "Actions",
+      "newClassification": "New classification"
+    },
+    "table": {
+      "columns": {
+        "name": "name",
+        "createdAt": "Created Date",
+        "actions": {
+          "open": "Open",
+          "edit": "Edit",
+          "delete": "Delete"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "name": "name"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "description": "Inpect Classification details as well as its associated data",
+      "tabs": {
+        "primaryInformation": "Primary Information"
+      },
+      "primaryInformationTab": {
+        "fields": {
+          "id": "Id",
+          "name": "Name",
+          "createdDate": "Created Date"
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New classification",
+        "update": "Classification"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Plan and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new classification.",
+        "nameField": {
+          "label": "Name",
+          "placeholder": "Enter name",
+          "description": "Provide a valid name."
+        }
+      }
+    }
+  },
+  "dashboard": {
+    "layout": {
+      "title": "Dashboard",
+      "searchFilter": {
+        "input": {
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "filter": "Filter"
+        }
+      }
+    },
+    "cardOne": {
+      "title": "Activities",
+      "labelOne": "Complete",
+      "labelTwo": "Porcentage",
+      "labelThree": "Executing"
+    },
+    "cardTwo": {
+      "title": "Schools"
+    },
+    "cardThree": {
+      "title": "Niños",
+      "labelOne": "presupuestado",
+      "labelTwo": "Porcentage"
+    },
+    "inventoryTable": {
+      "title": "Inventary Transactions",
+      "columns": {
+        "type": "Type",
+        "orderNumber": "Order Number",
+        "activity": "Activity",
+        "status": "Status",
+        "createdDate": "Created Date"
+      }
+    },
+    "ActivitiesMonthlyChart": {
+      "title": "Activities Monthly"
+    },
+    "ActivitiesStatusChart": {
+      "title": "Activities Status"
+    },
+    "RegisterMonthlyChart": {
+      "title": "Register Monthly"
+    }
+  },
+  "activity": {
+    "layout": {
+      "title": "activities"
+    },
+    "buttons": {
+      "new": "New activity"
+    },
+    "table": {
+      "columns": {
+        "activity": "Activity",
+        "school": "School",
+        "participants": "Participants",
+        "createdAt": "Created Date",
+        "statuses": {
+          "label": "Status",
+          "values": [
+            { "value": "pending", "label": "pending" },
+            { "value": "planning", "label": "planning" },
+            { "value": "requested_resources", "label": "requested resources" },
+            { "value": "confirmed_resources", "label": "confirmed resources" },
+            { "value": "active", "label": "active" },
+            { "value": "completed", "label": "completed" },
+            { "value": "verified", "label": "verified" },
+            { "value": "rejected", "label": "rejected" }
+          ]
+        },
+        "actions": {
+          "info": "Info",
+          "startPlanning": "Start Planning",
+          "planning": "Planning",
+          "register": "Register",
+          "requestResources": "Request Resources",
+          "confirmResources": "Confirm Resources",
+          "startActivity": "Start Activity",
+          "addProof": "Add Proof",
+          "complete": "Complete",
+          "verify": "Verify",
+          "reject": "Reject",
+          "edit": "Edit",
+          "delete": "Delete"
+        }
+      },
+      "filters": {
+        "status": "status",
+        "school": "school",
+        "activity": "activity"
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "name": "Name",
+              "description": "Description",
+              "createdAt": "Created Date",
+              "actions": "Actions"
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New activity",
+        "update": "Activity"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Activity and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new activity.",
+        "nameField": {
+          "label": "Name",
+          "placeholder": "Enter name",
+          "description": "Provide a valid name to identify activity."
+        },
+        "descriptionField": {
+          "label": "Description",
+          "placeholder": "Enter description",
+          "description": "Provide a description."
+        }
+      }
+    },
+    "formStartPlaning": {
+      "title": "¿esta seguro que desea empezar a planear?",
+      "description": "Si confirma podra ingresar los resources y profesionales necesarios para la actividad",
+      "buttons": {
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+      }
+    },
+    "formVerify": {
+      "title": "¿esta seguro que desea verificar la actividad?",
+      "description": "Si confirma se verificara la actividad",
+      "buttons": {
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+      }
+    },
+    "formDeny": {
+      "title": "Deny",
+      "content": "The activity will be rejected.",
+      "note": "Note",
+      "button": "Deny"
+    },
+    "formRequestResources": {
+      "title": "¿esta seguro que desea solicitar los resources?",
+      "description": "Si confirma se enviara la solicitud de los resources.",
+      "buttons": {
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+      }
+    },
+    "formStartActivity": {
+      "title": "¿esta seguro que desea arrancar la actividad?",
+      "description": "Si arrancar la actividad. podria empezar a adicionar los soportes.",
+      "buttons": {
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+      }
+    },
+    "formConfirmResources": {
+      "headings": "Confirm Resources",
+      "description": "Please confirm the quantity received. The confirmation cannot proceed until the confirmed quantity matches the expected quantity.",
+      "buttons": {
+        "confirm": "Confirm"
+      },
+      "confirmModal": {
+        "title": "Are you absolutely sure?",
+        "description": "This action will put the request qty into receive qty.",
+        "buttons": {
+          "action": "Default Values",
+          "cancel": "Cancel",
+          "confirm": "Confirm"
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new activity.",
+        "qtyRequested": "Qty requested",
+        "resourceField": {
+          "label": "Name",
+          "placeholder": "Enter name",
+          "description": "Provide a valid name to identify activity."
+        },
+        "qtyField": {
+          "label": "Qty Received",
+          "placeholder": "Enter Qty",
+          "description": "Provide a Qty."
+        }
+      }
+    },
+    "formComplete": {
+      "headings": "Complete",
+      "description": "Please complete activity",
+      "buttons": {
+        "confirm": "Confirm"
+      },
+      "confirmModal": {
+        "title": "Are you absolutely sure?",
+        "description": "This action will put the received qty into used qty.",
+        "buttons": {
+          "action": "Use All",
+          "cancel": "Cancel",
+          "confirm": "Confirm"
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new activity.",
+        "qtyReceived": "Qty Received",
+        "resourceField": {
+          "label": "Name",
+          "placeholder": "Enter name",
+          "description": "Provide a valid name to identify activity."
+        },
+        "qtyField": {
+          "label": "Qty Used",
+          "placeholder": "Enter Qty",
+          "description": "Provide a Qty."
+        },
+        "noteField": {
+          "label": "Note",
+          "placeholder": "Enter Note",
+          "description": "Provide a Note."
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "tabs": {
+        "primaryInformation": "Information",
+        "professionals": "Professionals",
+        "resources": "Resources",
+        "children": "Children",
+        "proofs": "Proofs"
+      },
+      "columns": {
+        "activity": "Activity",
+        "school": "School",
+        "participantsQty": "Participants qty",
+        "status": "Status",
+        "rejectNote": "Reject Note",
+        "createdAt": "Created Date"
+      },
+      "tableProfessional": {
+        "columns": {
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "email": "Email",
+          "createdAt": "Created Date"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filter results..."
+            }
+          }
+        }
+      },
+      "tableResource": {
+        "columns": {
+          "name": "Name",
+          "qty": "Qty",
+          "qtyReceive": "Qty Received",
+          "qtyUsed": "Qty Used",
+          "note": "Note",
+          "createdAt": "Created Date"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filter results..."
+            }
+          }
+        }
+      },
+      "tableChildren": {
+        "columns": {
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "status": "Status",
+          "statuses": {
+            "label": "Status",
+            "values": [
+              { "value": "pending", "label": "pending" },
+              { "value": "confirmed", "label": "confirmed" },
+              { "value": "rejected", "label": "rejected" }
+            ]
+          },
+          "note": "Note",
+          "createdAt": "Created Date"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filter results..."
+            }
+          }
+        }
+      },
+      "tableProof": {
+        "columns": {
+          "note": "Note",
+          "createdAt": "Created Date"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filter results..."
+            }
+          }
+        }
+      },
+      "tableProofAttendances": {
+        "title": "Info Proof",
+        "tabs": {
+          "files": "Files",
+          "children": "Children"
+        },
+        "columns": {
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "attend": "Attend",
+          "resources": "Resources"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filter results..."
+            }
+          }
+        }
+      }
+    },
+    "planning": {
+      "headings": "Planning",
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Add"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Activity and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        }
+      },
+      "main": {
+        "startDateField": {
+          "label": "Start date",
+          "placeholder": "Enter start date",
+          "description": "Provide a start date for the activity"
+        },
+        "endDateField": {
+          "label": "End date",
+          "placeholder": "Enter end date",
+          "description": "Provide a end date for the activity"
+        },
+        "buttons": {
+          "save": "Update"
+        }
+      },
+      "professional": {
+        "heading": "Professionals",
+        "description": "This section includes the main fields required to create a new activity.",
+        "table": {
+          "columns": {
+            "professional": "Professional",
+            "actions": {
+              "delete": "Delete"
+            }
+          },
+          "empty": "No entries"
+        },
+        "professionalField": {
+          "label": "Professional",
+          "placeholder": "Select professional...",
+          "empty": "No results found.",
+          "description": "Assign professional to the activity.",
+          "input": {
+            "placeholder": "Filter professional"
+          }
+        }
+      },
+      "resources": {
+        "heading": "Resources",
+        "description": "This section includes the main fields required to create a new activity.",
+        "schoolQty": "calculate base on schools",
+        "confirmModal": {
+          "title": "Are you absolutely sure?",
+          "description": "This action cannot be undone. This will permanently update the qty.",
+          "buttons": {
+            "cancel": "cancel",
+            "confirm": "confirm"
+          }
+        },
+        "table": {
+          "columns": {
+            "resource": "Resource",
+            "qtyTotal": "Qty Total",
+            "qtyAvailable": "Qty Available",
+            "qty": "Qty"
+          },
+          "empty": "No entries"
+        },
+        "qtyField": {
+          "label": "Professional"
+        }
+      }
+    },
+    "proof": {
+      "headings": "Proof",
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Add"
+      },
+      "tabs": {
+        "main": "Files",
+        "suppliers": "Children"
+      },
+      "dialogs": {
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "files": {
+        "heading": "Files",
+        "description": "This section includes the main fields required to create a new activity.",
+        "descriptionFile": "Files",
+        "fileField": {
+          "description": "Attach the file."
+        },
+        "noteField": {
+          "label": "Note",
+          "placeholder": "Note",
+          "description": "explain a little about the day."
+        }
+      },
+      "children": {
+        "heading": "Children",
+        "description": "This section includes the main fields required to create a new activity.",
+        "child": {
+          "label": "Professional"
+        },
+        "buttons": {
+          "mark": "Marcar como SI asistieron",
+          "unMark": "Marcar como NO asistieron"
+        }
+      }
+    }
+  },
+  "register": {
+    "layout": {
+      "title": "Activity"
+    },
+    "buttons": {
+      "sync": "Sync Offline Data",
+      "new": "New Registration"
+    },
+    "info": {
+      "heading": "Information",
+      "headingGuardian": "Guardian",
+      "columns": {
+        "firstName": "First Name",
+        "middleName": "Middle Name",
+        "lastName": "Last Name",
+        "secondLastName": "Second Last Name",
+        "identification": "Identification",
+        "createdAt": "Created Date"
+      }
+    },
+    "table": {
+      "columns": {
+        "idNum": "Identification Number",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "status": "Status",
+        "note": "Note",
+        "createdAt": "Created Date",
+        "actions": {
+          "info": "Info",
+          "edit": "Edit",
+          "delete": "Delete",
+          "resync": "Resync"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "name": "Name",
+              "status": "Status",
+              "createdAt": "Created Date",
+              "actions": "Actions"
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New Registration",
+        "update": "Registration"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save",
+        "sync": "Sync"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Registration and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "info": {
+        "heading": "Beneficiario",
+        "headingGuardian": "Guardian",
+        "subheading": {
+          "basicData": "Basic Data",
+          "infoData": "Basic Data",
+          "extraData": "Extra Data",
+          "affiliationData": "Affiliation Data"
+        },
+        "identificationField": {
+          "label": "Identifications",
+          "placeholder": "Select identification...",
+          "empty": "No results found.",
+          "description": "Assign identification to the person.",
+          "input": {
+            "placeholder": "Filter identifications"
+          }
+        },
+        "idNumField": {
+          "label": "Identification Number",
+          "placeholder": "Enter Identification Number",
+          "description": "Provide a identification number."
+        },
+        "firstNameField": {
+          "label": "First Name",
+          "placeholder": "Enter First Name",
+          "description": "Provide a First Name."
+        },
+        "middleNameField": {
+          "label": "Middle Name",
+          "placeholder": "Enter Middle Name",
+          "description": "Provide a Middle Name."
+        },
+        "lastNameField": {
+          "label": "Last Name",
+          "placeholder": "Enter Last Name",
+          "description": "Provide a Last Name."
+        },
+        "secondLastNameField": {
+          "label": "Second Last Name",
+          "placeholder": "Enter Second Last Name",
+          "description": "Provide a Second Last Name."
+        },
+        "deactivationReason": {
+          "label": "Deactivation Reason",
+          "placeholder": "Enter Deactivation Reason",
+          "description": "Provide a reason."
+        },
+        "address": {
+          "label": "Address",
+          "placeholder": "Enter Address",
+          "description": "Provide a Address."
+        },
+        "birthDate": {
+          "label": "Birth Date",
+          "placeholder": "Enter Birth Date",
+          "description": "Provide a Birth Date."
+        },
+        "affiliationDate": {
+          "label": "Affiliation Date",
+          "placeholder": "Enter Affiliation Date",
+          "description": "Provide a Affiliation Date."
+        },
+        "deactivationDate": {
+          "label": "Deactivation Date",
+          "placeholder": "Enter Deactivation Date",
+          "description": "Provide a Deactivation Date."
+        },
+        "areaType": {
+          "label": "Area Type",
+          "placeholder": "Enter Area Type",
+          "description": "Provide a Area Type."
+        },
+        "kinship": {
+          "label": "Kinship",
+          "placeholder": "Select kinship...",
+          "empty": "No results found.",
+          "description": "Assign kinship to the person.",
+          "input": {
+            "placeholder": "Filter kinship"
+          }
+        },
+        "beneficiaryType": {
+          "label": "Beneficiary Type",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "gender": {
+          "label": "Gender",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "country": {
+          "label": "Country",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "state": {
+          "label": "State",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "city": {
+          "label": "City",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "birthState": {
+          "label": "Birth State",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "birthCity": {
+          "label": "Birth City",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "educationLevel": {
+          "label": "Education Level",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "schoolGrade": {
+          "label": "School Grade",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "ethnicity": {
+          "label": "Ethnicity",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "population": {
+          "label": "Population",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "vulnerabilityFactor": {
+          "label": "Vulnerability Factor",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "shift": {
+          "label": "Shift",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "indigenousReserve": {
+          "label": "Indigenous Reserve",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "indigenousCommunity": {
+          "label": "Indigenous Community",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "identificationFieldGuardian": {
+          "label": "Identifications",
+          "placeholder": "Select identification...",
+          "empty": "No results found.",
+          "description": "Assign identification to the person.",
+          "input": {
+            "placeholder": "Filter identifications"
+          }
+        },
+        "idNumFieldGuardian": {
+          "label": "Identification Number",
+          "placeholder": "Enter Identification Number",
+          "description": "Provide a identification number."
+        },
+        "firstNameFieldGuardian": {
+          "label": "First Name",
+          "placeholder": "Enter First Name",
+          "description": "Provide a First Name."
+        },
+        "middleNameFieldGuardian": {
+          "label": "Middle Name",
+          "placeholder": "Enter Middle Name",
+          "description": "Provide a Middle Name."
+        },
+        "lastNameFieldGuardian": {
+          "label": "Last Name",
+          "placeholder": "Enter Last Name",
+          "description": "Provide a Last Name."
+        },
+        "secondLastNameFieldGuardian": {
+          "label": "Second Last Name",
+          "placeholder": "Enter Second Last Name",
+          "description": "Provide a Second Last Name."
+        }
+      }
+    }
+  },
+  "school": {
+    "layout": {
+      "title": "schools"
+    },
+    "buttons": {
+      "new": "New school"
+    },
+    "table": {
+      "columns": {
+        "name": "Name",
+        "infrastructureCode": "Infrastructure Code",
+        "daneCode": "Dane Code",
+        "branchCode": "Branch Code",
+        "areaType": {
+          "label": "Area Type",
+          "values": [
+            { "value": "urban", "label": "urban" },
+            { "value": "rural", "label": "rural" }
+          ]
+        },
+        "sectorType": {
+          "label": "Sector Type",
+          "values": [
+            { "value": "official / public", "label": "official / public" },
+            { "value": "private", "label": "private" },
+            { "value": "mixed", "label": "mixed" },
+            { "value": "not applicable", "label": "not applicable" }
+          ]
+        },
+        "city": "City",
+        "activities": "# Activities",
+        "actions": {
+          "info": "Info",
+          "edit": "Edit",
+          "delete": "Delete"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "name": "Name",
+              "cityId": "City",
+              "actions": "Actions"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "columns": {
+        "name": "Name",
+        "infrastructureCode": "Infrastructure Code",
+        "daneCode": "Dane Code",
+        "branchCode": "Branch Code",
+        "areaType": {
+          "label": "Area Type",
+          "values": [
+            { "value": "urban", "label": "urban" },
+            { "value": "rural", "label": "rural" }
+          ]
+        },
+        "sectorType": {
+          "label": "Sector Type",
+          "values": [
+            { "value": "official / public", "label": "official / public" },
+            { "value": "private", "label": "private" },
+            { "value": "mixed", "label": "mixed" },
+            { "value": "not applicable", "label": "not applicable" }
+          ]
+        },
+        "city": "City",
+        "activities": "# Activities",
+        "created_date": "Created Date"
+      },
+      "tableActivities": {
+        "columns": {
+          "activity": "Activity",
+          "qty": "Qty",
+          "status": "Status"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filter results..."
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New school",
+        "update": "School"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. School and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new school.",
+        "name": {
+          "label": "Name",
+          "placeholder": "Enter name",
+          "description": "Provide a valid name to identify school."
+        },
+        "cities": {
+          "label": "Cities",
+          "placeholder": "Select city...",
+          "empty": "No results found.",
+          "description": "Assign city to the school.",
+          "input": {
+            "placeholder": "Filter cities"
+          }
+        },
+        "infrastructureCode": {
+          "label": "Infrastructure Code",
+          "placeholder": "Enter Code",
+          "description": "Provide a valid code for infrastructure."
+        },
+        "daneCode": {
+          "label": "Dane Code",
+          "placeholder": "Enter Code",
+          "description": "Provide a valid code for dane."
+        },
+        "branchCode": {
+          "label": "Branch Code",
+          "placeholder": "Enter Code",
+          "description": "Provide a valid code for Branch."
+        },
+        "areaType": {
+          "label": "Area Type",
+          "placeholder": "Enter area type",
+          "description": "Provide a valid type to classify school."
+        },
+        "sectorType": {
+          "label": "Sector Type",
+          "placeholder": "Enter sector type",
+          "description": "Provide a valid type to classify school."
+        }
+      }
+    }
+  },
+  "professional": {
+    "layout": {
+      "title": "professionals"
+    },
+    "buttons": {
+      "new": "New professional"
+    },
+    "table": {
+      "columns": {
+        "idNum": "Identification Number",
+        "identification": "Identification",
+        "firstName": "First Name",
+        "middleName": "Middle Name",
+        "lastName": "Last Name",
+        "secondLastName": "Second Last Name",
+        "email": "Email",
+        "isActive": "Is Active",
+        "activities": "# Activities",
+        "createdAt": "Created Date",
+        "actions": {
+          "info": "Info",
+          "edit": "Edit",
+          "delete": "Delete"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "firstName": "First Name",
+              "middleName": "Middle Name",
+              "lastName": "Last Name",
+              "secondLastName": "Second Last Name",
+              "email": "Email",
+              "createdAt": "Created Date",
+              "actions": "Actions"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "columns": {
+        "identification": "Identification",
+        "idNum": "Identification Number",
+        "firstName": "First Name",
+        "middleName": "Middle Name",
+        "lastName": "Last Name",
+        "secondLastName": "Second Last Name",
+        "email": "Email",
+        "address": "Address",
+        "phone": "Phone",
+        "isActive": "is Active",
+        "activities": "# Activities",
+        "createdAt": "Created Date"
+      },
+      "tableActivities": {
+        "columns": {
+          "activity": "Activity",
+          "school": "School",
+          "qty": "# Participants",
+          "status": "Status"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filter results..."
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New professional",
+        "update": "Professional"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Professional and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new professional.",
+        "identification": {
+          "label": "Identifications",
+          "placeholder": "Select identification...",
+          "empty": "No results found.",
+          "description": "Assign identification to the person.",
+          "input": {
+            "placeholder": "Filter identifications"
+          }
+        },
+        "idNum": {
+          "label": "Identification Number",
+          "placeholder": "Enter Identification Number",
+          "description": "Provide a identification number."
+        },
+        "firstName": {
+          "label": "First Name",
+          "placeholder": "Enter first name",
+          "description": "Provide a valid first name to identify professional."
+        },
+        "lastName": {
+          "label": "Last Name",
+          "placeholder": "Enter last name",
+          "description": "Provide a valid last name to identify professional."
+        },
+        "middleName": {
+          "label": "Middle Name",
+          "placeholder": "Enter middle name",
+          "description": "Provide a valid middle name to identify professional."
+        },
+        "secondLastName": {
+          "label": "Second Last Name",
+          "placeholder": "Enter second last name",
+          "description": "Provide a valid second last name to identify professional."
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter email",
+          "description": "Provide a valid email."
+        },
+        "address": {
+          "label": "Address",
+          "placeholder": "Enter Address",
+          "description": "Provide a valid address."
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "Enter phone",
+          "description": "Provide a valid phone."
+        },
+        "isActive": {
+          "label": "Is Active?",
+          "description": "if it is not active. it cannot register new children"
+        }
+      }
+    }
+  },
+  "child": {
+    "layout": {
+      "title": "children"
+    },
+    "buttons": {
+      "guardian": "Guardians",
+      "new": "New child"
+    },
+    "table": {
+      "columns": {
+        "idNum": "Identification Number",
+        "identification": "Identification",
+        "firstName": "First Name",
+        "middleName": "Middle Name",
+        "lastName": "Last Name",
+        "secondLastName": "Second Last Name",
+        "guardian": "Guardian",
+        "identification": "Identification",
+        "activities": "# Activities",
+        "areaType": {
+          "label": "Area Type",
+          "values": [
+            { "value": "urban", "label": "urban" },
+            { "value": "rural", "label": "rural" }
+          ]
+        },
+        "createdAt": "Created Date",
+        "actions": {
+          "info": "Info",
+          "edit": "Edit",
+          "delete": "Delete"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "firstName": "First Name",
+              "middleName": "Middle Name",
+              "lastName": "Last Name",
+              "secondLastName": "Second Last Name",
+              "guardianId": "Guardian",
+              "identificationId": "Identification",
+              "createdAt": "Created Date",
+              "actions": "Actions"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "columns": {
+        "idNum": "Identification Number",
+        "identification": "Identification",
+        "firstName": "First Name",
+        "middleName": "Middle Name",
+        "lastName": "Last Name",
+        "secondLastName": "Second Last Name",
+        "guardian": "Guardian",
+        "gender": "Gender",
+        "birthDate": "Birth Date",
+        "affiliationDate": "Affiliation Date",
+        "deactivationDate": "Deactivation Date",
+        "country": "Country",
+        "state": "State",
+        "city": "City",
+        "birthState": "Birth State",
+        "birthCity": "Birth City",
+        "educationLevel": "Education Level",
+        "schoolGrade": "School Grade",
+        "areaType": "Area Type",
+        "address": "Address",
+        "ethnicity": "Ethnicity",
+        "population": "Population",
+        "vulnerabilityFactor": "Vulnerability Factor",
+        "shift": "Shift",
+        "indigenousReserve": "Indigenous Reserve",
+        "indigenousCommunity": "Indigenous Community",
+        "deactivationReason": "Deactivation Reason",
+        "createdAt": "Created Date",
+        "activities": "Activities"
+      },
+      "tableActivities": {
+        "columns": {
+          "activity": "Activity",
+          "school": "School",
+          "attendance": "Attendance",
+          "status": "Status"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filter results..."
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New child",
+        "update": "Child"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Child and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new child.",
+        "identification": {
+          "label": "Identifications",
+          "placeholder": "Select identification...",
+          "empty": "No results found.",
+          "description": "Assign identification to the person.",
+          "input": {
+            "placeholder": "Filter identifications"
+          }
+        },
+        "idNum": {
+          "label": "Identification Number",
+          "placeholder": "Enter Identification Number",
+          "description": "Provide a identification number."
+        },
+        "firstName": {
+          "label": "First Name",
+          "placeholder": "Enter first name",
+          "description": "Provide a valid first name to identify child."
+        },
+        "lastName": {
+          "label": "Last Name",
+          "placeholder": "Enter last name",
+          "description": "Provide a valid last name to identify child."
+        },
+        "middleName": {
+          "label": "Middle Name",
+          "placeholder": "Enter middle name",
+          "description": "Provide a valid middle name to identify child."
+        },
+        "secondLastName": {
+          "label": "Second Last Name",
+          "placeholder": "Enter second last name",
+          "description": "Provide a valid second last name to identify child."
+        },
+        "kinship": {
+          "label": "Kinship",
+          "placeholder": "Select kinship...",
+          "empty": "No results found.",
+          "description": "Assign kinship to the person.",
+          "input": {
+            "placeholder": "Filter kinship"
+          }
+        },
+        "guardian": {
+          "label": "Guardian",
+          "placeholder": "Select guardian...",
+          "empty": "No results found.",
+          "description": "Assign guardian to the person.",
+          "input": {
+            "placeholder": "Filter guardians"
+          }
+        },
+        "deactivationReason": {
+          "label": "Deactivation Reason",
+          "placeholder": "Enter Deactivation Reason",
+          "description": "Provide a reason."
+        },
+        "address": {
+          "label": "Address",
+          "placeholder": "Enter Address",
+          "description": "Provide a Address."
+        },
+        "birthDate": {
+          "label": "Birth Date",
+          "placeholder": "Enter Birth Date",
+          "description": "Provide a Birth Date."
+        },
+        "affiliationDate": {
+          "label": "Affiliation Date",
+          "placeholder": "Enter Affiliation Date",
+          "description": "Provide a Affiliation Date."
+        },
+        "deactivationDate": {
+          "label": "Deactivation Date",
+          "placeholder": "Enter Deactivation Date",
+          "description": "Provide a Deactivation Date."
+        },
+        "areaType": {
+          "label": "Area Type",
+          "placeholder": "Enter Area Type",
+          "description": "Provide a Area Type."
+        },
+        "beneficiaryType": {
+          "label": "Beneficiary Type",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "gender": {
+          "label": "Gender",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "country": {
+          "label": "Country",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "birthState": {
+          "label": "Birth State",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "birthCity": {
+          "label": "Birth City",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "state": {
+          "label": "State",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "city": {
+          "label": "City",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "educationLevel": {
+          "label": "Education Level",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "schoolGrade": {
+          "label": "School Grade",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "ethnicity": {
+          "label": "Ethnicity",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "population": {
+          "label": "Population",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "vulnerabilityFactor": {
+          "label": "Vulnerability Factor",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "shift": {
+          "label": "Shift",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "indigenousReserve": {
+          "label": "Indigenous Reserve",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "indigenousCommunity": {
+          "label": "Indigenous Community",
+          "placeholder": "Select...",
+          "empty": "No results found.",
+          "description": "",
+          "input": {
+            "placeholder": "Filter"
+          }
+        }
+      }
+    }
+  },
+  "guardian": {
+    "layout": {
+      "title": "Guardians",
+      "back": "Children"
+    },
+    "buttons": {
+      "new": "New guardian"
+    },
+    "table": {
+      "columns": {
+        "idNum": "Identification Number",
+        "identification": "Identification",
+        "firstName": "First Name",
+        "middleName": "Middle Name",
+        "lastName": "Last Name",
+        "secondLastName": "Second Last Name",
+        "children": "Children",
+        "phone": "Phone",
+        "createdAt": "Created Date",
+        "actions": {
+          "info": "Info",
+          "edit": "Edit",
+          "delete": "Delete"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "firstName": "First Name",
+              "middleName": "Middle Name",
+              "lastName": "Last Name",
+              "secondLastName": "Second Last Name",
+              "identificationId": "Identification",
+              "phone": "Phone",
+              "createdAt": "Created Date",
+              "actions": "Actions"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "columns": {
+        "idNum": "Identification Number",
+        "identification": "Identification",
+        "firstName": "First Name",
+        "middleName": "Middle Name",
+        "lastName": "Last Name",
+        "phone": "Phone",
+        "secondLastName": "Second Last Name",
+        "children": "Children",
+        "createdAt": "Created Date"
+      },
+      "tableChildren": {
+        "columns": {
+          "idNum": "Identification Number",
+          "firstName": "First Name",
+          "middleName": "Middle Name",
+          "lastName": "Last Name",
+          "secondLastName": "Second Last Name"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filter results..."
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New guardian",
+        "update": "Guardian"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Child and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new child.",
+        "identification": {
+          "label": "Identifications",
+          "placeholder": "Select identification...",
+          "empty": "No results found.",
+          "description": "Assign identification to the person.",
+          "input": {
+            "placeholder": "Filter identifications"
+          }
+        },
+        "idNum": {
+          "label": "Identification Number",
+          "placeholder": "Enter Identification Number",
+          "description": "Provide a identification number."
+        },
+        "firstName": {
+          "label": "First Name",
+          "placeholder": "Enter first name",
+          "description": "Provide a valid first name to identify child."
+        },
+        "lastName": {
+          "label": "Last Name",
+          "placeholder": "Enter last name",
+          "description": "Provide a valid last name to identify child."
+        },
+        "middleName": {
+          "label": "Middle Name",
+          "placeholder": "Enter middle name",
+          "description": "Provide a valid middle name to identify child."
+        },
+        "secondLastName": {
+          "label": "Second Last Name",
+          "placeholder": "Enter second last name",
+          "description": "Provide a valid second last name to identify child."
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "Enter phone",
+          "description": "Provide a valid phone."
+        }
+      }
+    }
+  },
+  "resource": {
+    "layout": {
+      "title": "resources"
+    },
+    "buttons": {
+      "suppliers": "Suppliers",
+      "new": "New resource"
+    },
+    "table": {
+      "columns": {
+        "name": "Name",
+        "supplier": "Supplier",
+        "classification": "Classification",
+        "price": "Price",
+        "type": "Type",
+        "usageType": "Usage Type",
+        "inventory": "Inventory",
+        "createdAt": "Created Date",
+        "actions": {
+          "edit": "Edit",
+          "delete": "Delete"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "name": "Name",
+              "supplierId": "Supplier",
+              "resourceClassificationId": "Classification",
+              "createdAt": "Created Date",
+              "actions": "Actions"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "columns": {
+        "name": "Name",
+        "supplier": "Supplier",
+        "classification": "Classification",
+        "price": "Price",
+        "type": "Type",
+        "usageType": "Usage Type",
+        "inventory": "Inventory",
+        "createdAt": "Created Date"
+      },
+      "tableInventory": {
+        "columns": {
+          "type": "Type",
+          "orderNumber": "OrderNumber",
+          "activity": "Activity",
+          "school": "School",
+          "qty": "Qty",
+          "status": "Status",
+          "createdAt": "Created Date"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filter results..."
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New resource",
+        "update": "Resource"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "tabs": {
+        "main": "Main",
+        "suppliers": "Suppliers"
+      },
+      "dialogs": {
+        "create": {
+          "title": "New label",
+          "description": "Fill in the inputs and click save when you&apos;re done."
+        },
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Resource and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new resource.",
+        "name": {
+          "label": "Name",
+          "placeholder": "Enter name",
+          "description": "Provide a valid name to identify resource."
+        },
+        "price": {
+          "label": "Price",
+          "placeholder": "Enter price",
+          "description": "Provide a valid price."
+        },
+        "type": {
+          "label": "Type",
+          "value": {
+            "internal": "internal",
+            "external": "external"
+          }
+        },
+        "usageType": {
+          "label": "Usage Type",
+          "value": {
+            "general": "general",
+            "individual": "individual"
+          }
+        },
+        "suppliers": {
+          "label": "Suppliers",
+          "placeholder": "Select supplier...",
+          "empty": "No results found.",
+          "description": "Assign supplier to the resource.",
+          "input": {
+            "placeholder": "Filter suppliers"
+          }
+        },
+        "classifications": {
+          "createNew": "Create New Classifications",
+          "label": "Classifications",
+          "placeholder": "Select classification...",
+          "empty": "No results found.",
+          "description": "Assign classification to the resource.",
+          "input": {
+            "placeholder": "Filter classifications"
+          }
+        }
+      },
+      "suppliers": {
+        "heading": "Suppliers",
+        "description": "Assign suppliers to the resource.",
+        "dialog": {
+          "trigger": "Add supplier",
+          "title": "Add supplier to resource",
+          "description": "Fill in the fields below and save when you're done",
+          "cancelButton": "Cancel",
+          "addButton": "Add"
+        },
+        "table": {
+          "columns": {
+            "supplier": "Supplier",
+            "actions": {
+              "edit": "Edit",
+              "delete": "Delete"
+            }
+          },
+          "empty": "No entries"
+        },
+        "supplierField": {
+          "label": "Supplier name",
+          "placeholder": "Choose a supplier from options",
+          "description": "This is the supplier to add to the resource",
+          "commandEmpty": "No results found",
+          "commandPlaceholder": "Search for supplier..."
+        }
+      },
+      "resourceClassification": {
+        "heading": "New label",
+        "description": "Fill in the inputs and click save when you're done.",
+        "name": {
+          "label": "Name",
+          "placeholder": "Enter name",
+          "description": "Give context on what this permission views or modifies"
+        },
+        "desc": {
+          "label": "Description",
+          "placeholder": "Enter description",
+          "description": "Give context to help labels understand this permission and the effect it will have"
+        },
+        "buttons": {
+          "cancel": "Cancel",
+          "save": "Save"
+        }
+      }
+    }
+  },
+  "supplier": {
+    "layout": {
+      "title": "Suppliers",
+      "back": "Resources"
+    },
+    "buttons": {
+      "new": "New supplier"
+    },
+    "table": {
+      "columns": {
+        "name": "Name",
+        "resources": "Resources",
+        "createdAt": "Created Date",
+        "actions": {
+          "edit": "Edit",
+          "delete": "Delete"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "name": "Name",
+              "createdAt": "Created Date",
+              "actions": "Actions"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "columns": {
+        "name": "Name",
+        "resources": "# Resources",
+        "createdAt": "Created Date"
+      },
+      "tableResources": {
+        "columns": {
+          "name": "Name",
+          "price": "Price",
+          "createdAt": "Created Date"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filter results..."
+            }
+          }
+        }
+      }
+    },
+    "form": {
+      "headings": {
+        "new": "New supplier",
+        "update": "Supplier"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Resource and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new resource.",
+        "name": {
+          "label": "Name",
+          "placeholder": "Enter name",
+          "description": "Provide a valid name to identify resource."
+        }
+      }
+    }
+  },
+  "inventoryTransaction": {
+    "layout": {
+      "title": "inventory transactions"
+    },
+    "buttons": {
+      "new": "New transaction"
+    },
+    "statuses": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "rejected": "Rejected"
+    },
+    "types": {
+      "stock": "Stock",
+      "restock": "Restock",
+      "consume": "Consume",
+      "adjustment": "Adjustment"
+    },
+    "table": {
+      "columns": {
+        "status": "Status",
+        "resources": "# Resources",
+        "note": "Note",
+        "supplierInvoiceNumber": "Supplier INV#",
+        "orderNumber": "Order Number",
+        "activity": "Activity",
+        "school": "School",
+        "createdAt": "Created Date",
+        "type": {
+          "label": "Type",
+          "values": [
+            { "value": "stock", "label": "stock" },
+            { "value": "restock", "label": "restock" },
+            { "value": "consume", "label": "consume" },
+            { "value": "adjustment", "label": "adjustment" }
+          ]
+        },
+        "status": {
+          "label": "Status",
+          "values": [
+            { "value": "pending", "label": "pending" },
+            { "value": "confirmed", "label": "confirmed" },
+            { "value": "rejected", "label": "rejected" }
+          ]
+        },
+        "actions": {
+          "edit": "Edit",
+          "addInvoice": "Add Invoice",
+          "approve": "Approve",
+          "deny": "Deny",
+          "delete": "Delete"
+        }
+      },
+      "toolbar": {
+        "searchFilter": {
+          "input": {
+            "placeholder": "Filter results..."
+          }
+        },
+        "view": {
+          "view": "View",
+          "toggleColumns": {
+            "key": "Toggle columns",
+            "values": {
+              "type": "Type",
+              "note": "Note",
+              "lastName": "Last Name",
+              "supplierInvoiceNumber": "Supplier INV#",
+              "createdAt": "Created Date",
+              "actions": "Actions"
+            }
+          }
+        }
+      }
+    },
+    "info": {
+      "heading": "Info",
+      "columns": {
+        "type": "Type",
+        "note": "Note",
+        "rejectNote": "Reject Note",
+        "approveNote": "Approve Note",
+        "status": "Status",
+        "supplierInvoiceNumber": "Supplier INV#",
+        "orderNumber": "Order Number",
+        "activity": "Activity",
+        "school": "School",
+        "resources": "# Resources",
+        "createdAt": "Created Date"
+      },
+      "tableResource": {
+        "columns": {
+          "name": "Name",
+          "qty": "Qty",
+          "createdAt": "Created Date"
+        },
+        "toolbar": {
+          "searchFilter": {
+            "input": {
+              "placeholder": "Filter results..."
+            }
+          }
+        }
+      }
+    },
+    "addInvoice": {
+      "title": "Add Invoice",
+      "content": "add the invoice number to the transaction.",
+      "invoiceNumber": "Invoice #",
+      "button": "Add"
+    },
+    "deny": {
+      "title": "Denied",
+      "content": "The transaction will be rejected.",
+      "note": "Note",
+      "button": "Deny"
+    },
+    "approve": {
+      "title": "Approved",
+      "content": "The transaction will be approve.",
+      "note": "Note",
+      "button": "Approve"
+    },
+    "form": {
+      "headings": {
+        "new": "New Transaction",
+        "update": "Transaction"
+      },
+      "description": "Provide required information and save when done",
+      "buttons": {
+        "save": "Save"
+      },
+      "dialogs": {
+        "delete": {
+          "title": "Are you sure?",
+          "description": "This action is irreversible. Transaction and related records won&apos;t be recoverable once deleted!",
+          "buttons": {
+            "cancel": "Cancel",
+            "continue": "Continue"
+          }
+        },
+        "unsaved": {
+          "title": "Unsaved changes",
+          "description": "You have unsaved changes. Save to persist changes otherwise you can discard message.",
+          "buttons": {
+            "save": "Save",
+            "discard": "Discard"
+          }
+        }
+      },
+      "tabs": {
+        "main": "Main",
+        "professionals": "Professionals",
+        "resources": "Resources"
+      },
+      "info": {
+        "heading": "Primary information",
+        "description": "This section includes the main fields required to create a new transaction.",
+        "type": {
+          "label": "Type",
+          "placeholder": "Enter type",
+          "description": "Provide a valid type to classify transaction."
+        },
+        "note": {
+          "label": "Note",
+          "placeholder": "Enter note",
+          "description": "Provide a note/memo for this transaction"
+        },
+        "status": {
+          "label": "Status",
+          "placeholder": "Select status...",
+          "description": "Assign a status to the plan as plan moves along departments."
+        },
+        "supplierInvoiceNumber": {
+          "label": "Supplier INV#",
+          "placeholder": "Enter supplier invoice number",
+          "description": "This serves as a reference to map this transaction to the supplier's original invoice."
+        },
+        "orderNumber": {
+          "label": "Order Number",
+          "placeholder": "Enter order number",
+          "description": "This serves as a reference to map this transaction to the order from the company."
+        }
+      },
+      "resources": {
+        "heading": "Resources",
+        "description": "Assign resources to the transaction.",
+        "dialog": {
+          "trigger": "Add resource",
+          "title": "Add resource to transaction",
+          "description": "Fill in the fields below and save when you're done",
+          "cancelButton": "Cancel",
+          "addButton": "Add"
+        },
+        "table": {
+          "columns": {
+            "resource": "Resource",
+            "qty": "Qty",
+            "actions": {
+              "edit": "Edit",
+              "delete": "Delete"
+            }
+          },
+          "empty": "No entries"
+        },
+        "resourceField": {
+          "label": "Resource name",
+          "placeholder": "Choose a resource from options",
+          "description": "This is the resource to add to the transaction",
+          "commandEmpty": "No results found",
+          "commandPlaceholder": "Search for resource..."
+        },
+        "qtyField": {
+          "label": "Qty",
+          "placeholder": "Enter the number of resources",
+          "description": "This represents the resources"
+        }
+      }
+    }
+  },
+  "reports": {
+    "layout": {
+      "title": "Reports"
+    },
+    "buttons": {
+      "report": "Report"
+    },
+    "tabs": {
+      "coverage": {
+        "title": "Report Coverage",
+        "tab": "Coverage"
+      },
+      "microdato": {
+        "tab": "Microdato",
+        "title": "Report Microdato"
+      },
+      "resources": {
+        "tab": "Resources",
+        "title": "Report Resources"
+      }
+    },
+    "form": {
+      "fields": {
+        "program": {
+          "label": "Program",
+          "placeholder": "Select ...",
+          "empty": "No results found.",
+          "input": {
+            "placeholder": "Filter"
+          }
+        },
+        "year": {
+          "label": "Year",
+          "placeholder": "Enter Year"
+        }
+      }
+    }
+  }
+}

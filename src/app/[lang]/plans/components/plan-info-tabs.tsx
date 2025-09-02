@@ -1,0 +1,51 @@
+'use client';
+
+import type { ComponentType } from 'react';
+import type { Plan } from './@types';
+
+import { TabsSkeleton } from '@/components/skeletons';
+import { Separator } from '@/components/ui/separator';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+
+import { useStoreContext } from '@/store';
+import dynamic from 'next/dynamic';
+import { useCallback, useMemo, useState } from 'react';
+
+const ProgramPlanTabsPrimary = dynamic(() => import('./plan-info-tabs-primary'));
+
+export function PlanInfoTabs({ plan }: { plan: Plan | undefined }) {
+  const dictionary = useStoreContext((state) => state.dictionary.plan.info);
+
+  const tabNames = useMemo(
+    () => Object.values(dictionary.tabs) as [string, string, string],
+    [dictionary.tabs]
+  );
+  const tabs = useMemo(
+    () =>
+      new Map<string, { component: ComponentType<{ plan?: Plan }> }>([
+        [tabNames[0], { component: ProgramPlanTabsPrimary }],
+      ]),
+    [tabNames]
+  );
+  const [tab, setTab] = useState<string>(tabNames[0]);
+  const renderTabContent = useCallback(() => {
+    const Component = tabs.get(tab)?.component ?? TabsSkeleton;
+    return <Component plan={plan} />;
+  }, [tabs, tab, plan]);
+
+  return (
+    <Tabs value={tab} onValueChange={(tab) => setTab(tab)} className="mt-4">
+      <TabsList className="mb-4 grid w-fit grid-cols-1">
+        {tabNames.map((tab) => (
+          <TabsTrigger key={`tab-${tab}`} value={tab} className="text-xs capitalize sm:text-sm">
+            {tab}
+          </TabsTrigger>
+        ))}
+      </TabsList>
+      <Separator />
+      <TabsContent value={tab} className="space-y-2">
+        {renderTabContent()}
+      </TabsContent>
+    </Tabs>
+  );
+}

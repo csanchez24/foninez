@@ -1,0 +1,299 @@
+import type { Resource, ResourceFormValues } from './@types';
+
+import { Icons } from '@/components/icons';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from '@/components/ui/alert-dialog';
+import { Button } from '@/components/ui/button';
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from '@/components/ui/command';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import { FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Separator } from '@/components/ui/separator';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table';
+import * as React from 'react';
+
+import { useStoreContext } from '@/store';
+import { cn } from '@/utils/cn';
+import { useFieldArray, useFormContext } from 'react-hook-form';
+import { useDebounce } from 'use-debounce';
+import { useGetSuppliers } from '@/hooks/queries/use-supplier-queries';
+
+export default function ResourceFormSupplier({ resource }: { resource?: Resource }) {
+  const dictionary = useStoreContext((state) => state.dictionary.resource.form.suppliers);
+
+  // Since there can be hundreds of resources we search in the server instead
+  const [search, setSearch] = React.useState<string>();
+  const [deboucedSearchText] = useDebounce(search?.trim(), 500);
+  const { data: suppliers } = useGetSuppliers({ deboucedSearchText });
+
+  // We need to to make the dialog controllable since we trigger it from several places
+  const [opened, setOpened] = React.useState(false);
+
+  // Make select controllable so that we can autoclose on user selection
+  const [openedSelect, setOpenedSelect] = React.useState(false);
+
+  // Distinguish between adding new and editing existing record
+  const [isNew, setIsNew] = React.useState(false);
+
+  const form = useFormContext<ResourceFormValues>();
+  const { fields, append, remove, replace } = useFieldArray({
+    name: 'resourcesToSuppliers',
+    control: form.control,
+  });
+
+  React.useEffect(() => {
+    if (resource?.resourcesToSuppliers)
+      replace(
+        resource?.resourcesToSuppliers
+          .filter((l) => l.supplier)
+          .map((l) => {
+            return { supplier: l.supplier! };
+          })
+      );
+  }, [replace, resource]);
+
+  const watchedFields = form.watch('resourcesToSuppliers');
+
+  // Track current field's index as we'll need it for edit/delete purposes
+  const [entryIndex, setEntryIndex] = React.useState<number>(() => {
+    return (fields?.length ?? 1) - 1;
+  });
+
+  const entry = React.useMemo(() => {
+    return watchedFields?.[entryIndex];
+  }, [watchedFields, entryIndex]);
+
+  /** Unset entry index and remove newest unfinished entry from resources array */
+  const handleCancelDialogAction = React.useCallback(() => {
+    // This means the user did not finish the process of adding new
+    // entry to the resources array. We can just remove it.
+    if (isNew) {
+      remove(Math.max(0, fields.length - 1));
+      setIsNew(false);
+    }
+    setEntryIndex(-1);
+  }, [fields.length, isNew, setIsNew, setEntryIndex, remove]);
+
+  /** Reset everything once we save/close dialog */
+  const handleAddDialogAction = React.useCallback(() => {
+    setIsNew(false);
+    setOpened(false);
+    setEntryIndex(-1);
+  }, [setIsNew, setOpened]);
+
+  /** Set `entryIndex` for existing record needed to run updates */
+  const handleEditTableAction = React.useCallback(
+    (entryIndex: number) => {
+      setEntryIndex(entryIndex);
+      setOpened(true);
+    },
+    [setEntryIndex, setOpened]
+  );
+
+  /** Remove entry from array */
+  const handleDeleteTableAction = React.useCallback(
+    (index: number) => {
+      remove(index);
+    },
+    [remove]
+  );
+
+  /** Add entry to array with dummy data and open dialog */
+  const handleAddNew = React.useCallback(() => {
+    append({ supplier: { id: -1 } });
+    setEntryIndex(fields?.length ?? 1);
+    setIsNew(true);
+  }, [fields, append, setEntryIndex, setIsNew]);
+
+  return (
+    <div className="my-6 space-y-2">
+      <div className="flex items-start justify-between">
+        <div>
+          <h3 className="text-lg font-medium">{dictionary.heading}</h3>
+          <p className="text-sm text-muted-foreground">{dictionary.description}</p>
+        </div>
+        <AlertDialog open={opened} onOpenChange={setOpened}>
+          <AlertDialogTrigger asChild>
+            <Button variant="outline" onClick={handleAddNew}>
+              <Icons.PlusCircled className="mr-2 h-4 w-4" />
+              {dictionary.dialog.trigger}
+            </Button>
+          </AlertDialogTrigger>
+          <AlertDialogContent className="sm:max-w-xl" onEscapeKeyDown={(e) => e.preventDefault()}>
+            <AlertDialogHeader>
+              <AlertDialogTitle>{dictionary.dialog.title}</AlertDialogTitle>
+              <AlertDialogDescription>{dictionary.dialog.description}</AlertDialogDescription>
+            </AlertDialogHeader>
+            {entryIndex >= 0 && (
+              <>
+                <FormField
+                  name={`resourcesToSuppliers.${entryIndex}.supplier`}
+                  control={form.control}
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>{dictionary.supplierField.label}</FormLabel>
+                      <Popover open={openedSelect} onOpenChange={setOpenedSelect} modal={true}>
+                        <PopoverTrigger asChild>
+                          <Button
+                            type="button"
+                            variant="outline"
+                            role="combobox"
+                            aria-expanded={openedSelect}
+                            className={cn(
+                              'w-full justify-between capitalize',
+                              field.value.id < 0 && 'text-muted-foreground'
+                            )}
+                          >
+                            {field.value.id >= 0
+                              ? suppliers?.body.data.find(({ id }) => id === field.value.id)?.name
+                              : dictionary.supplierField.placeholder}
+                            <Icons.ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                          </Button>
+                        </PopoverTrigger>
+                        <PopoverContent className="w-[var(--radix-popover-trigger-width)] p-0">
+                          <Command shouldFilter={false}>
+                            <CommandInput
+                              placeholder={dictionary.supplierField.commandPlaceholder}
+                              value={search}
+                              onValueChange={setSearch}
+                            />
+                            <CommandList>
+                              <CommandEmpty>{dictionary.supplierField.commandEmpty}</CommandEmpty>
+                              <CommandGroup>
+                                {suppliers?.body.data.map((supplier) => (
+                                  <CommandItem
+                                    key={supplier.id}
+                                    value={supplier.id.toString()}
+                                    disabled={watchedFields?.some(
+                                      (p) => p.supplier.id === supplier.id
+                                    )}
+                                    onSelect={() => {
+                                      form.setValue(
+                                        `resourcesToSuppliers.${entryIndex}.supplier`,
+                                        supplier
+                                      );
+                                      setOpenedSelect(false);
+                                    }}
+                                  >
+                                    <div className="flex items-start">
+                                      <Icons.Check
+                                        className={cn(
+                                          'mr-2 h-4 w-4',
+                                          field.value.id === supplier.id
+                                            ? 'opacity-100'
+                                            : 'opacity-0'
+                                        )}
+                                      />
+                                      <div className="flex-1">
+                                        <div className="capitalize">{supplier.name}</div>
+                                      </div>
+                                    </div>
+                                  </CommandItem>
+                                ))}
+                              </CommandGroup>
+                            </CommandList>
+                          </Command>
+                        </PopoverContent>
+                      </Popover>
+                      <FormDescription>{dictionary.supplierField.description}</FormDescription>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </>
+            )}
+            <AlertDialogFooter className="mt-6">
+              <AlertDialogCancel className="min-w-24" onClick={handleCancelDialogAction}>
+                {dictionary.dialog.cancelButton}
+              </AlertDialogCancel>
+              <AlertDialogAction
+                className="min-w-24"
+                disabled={!(entry && entry.supplier.id >= 0)}
+                onClick={handleAddDialogAction}
+              >
+                {dictionary.dialog.addButton}
+              </AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
+      </div>
+      <Separator />
+      <Table className="mt-4">
+        <TableHeader>
+          <TableRow>
+            <TableHead>{dictionary.table.columns.supplier}</TableHead>
+            <TableHead />
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {watchedFields?.length ? (
+            watchedFields.map((field, i) => (
+              <TableRow key={`${field.supplier.id}-${i}`}>
+                <TableCell className="max-w-[300px] truncate">{field.supplier.name}</TableCell>
+                <TableCell className="w-4">
+                  <div className="flex items-center space-x-4">
+                    <DropdownMenu>
+                      <DropdownMenuTrigger asChild>
+                        <Button
+                          variant="ghost"
+                          className="flex h-8 w-8 p-0 data-[state=open]:bg-muted"
+                        >
+                          <Icons.DotsHorizontal className="h-4 w-4" />
+                          <span className="sr-only">Open actions menu</span>
+                        </Button>
+                      </DropdownMenuTrigger>
+                      <DropdownMenuContent align="end" className="w-[160px]">
+                        <DropdownMenuItem onClick={() => handleEditTableAction(i)}>
+                          {dictionary.table.columns.actions.edit}
+                        </DropdownMenuItem>
+                        <DropdownMenuItem onClick={() => handleDeleteTableAction(i)}>
+                          {dictionary.table.columns.actions.delete}
+                        </DropdownMenuItem>
+                      </DropdownMenuContent>
+                    </DropdownMenu>
+                  </div>
+                </TableCell>
+              </TableRow>
+            ))
+          ) : (
+            <TableRow className="hover:bg-transparent">
+              <TableCell colSpan={4}>
+                <div className="py-4 text-center font-medium text-muted-foreground">
+                  {dictionary.table.empty}
+                </div>
+              </TableCell>
+            </TableRow>
+          )}
+        </TableBody>
+      </Table>
+    </div>
+  );
+}
