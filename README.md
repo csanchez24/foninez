@@ -1,18 +1,44 @@
 # Foninez
 
-The goal of project is to create a platform that manages funding targeted towards
-children.
+Operational platform for beneficiary-based programs, activity planning, resource control, and execution tracking.
 
-## What do we need?
+This project is focused on supporting structured operational workflows for programs that manage beneficiaries, activities, resources, and execution records.
 
-- [ ] A way to classify proof files
-- [ ] Import Colombian cities
-- [ ] A page to handle schools. There could 100s of them
-- [ ] A page to handle products. Here we'll add supplier(non-required) and classify the product, and display inventory details per product
-- [ ] A page for programs and modalities.
-- [ ] A page to handle professionals. Here we can assign schools.
-- [ ] A page for children and from within here we can assign/create guardians.
-- [ ] A page for the plans that'll handle relations to programs, assigning modalities, modalities' activities, and modalities activities products and schools.
-- [ ] A page for inventory transactions.
-- [ ] A page to handle Activity-School once the plan is approved. From here we can manage that activity's related records.
-- [ ] OFFLINE registration issue. Are we creating a new app???
+## Overview
+
+Foninez is designed as an operational platform for organizations that need to manage program activities, keep track of beneficiaries, control resources, and maintain clear execution records in one place.
+
+## Features
+
+- Beneficiary-based workflow support
+- Activity planning and tracking
+- Resource control
+- Execution records
+- Structured API contracts and validation
+- Frontend data fetching with React Query
+
+## Why I Built It
+
+I built this project to support operational processes that require more structure, traceability, and consistency across program execution, beneficiary management, and related records.
+
+## Tech Stack
+
+- TypeScript
+- Next.js
+- React
+- Tailwind CSS
+- React Query
+- Zod
+- ts-rest
+
+## Current Status
+
+This project is in active development and continues to evolve as workflows, API contracts, and platform features are refined.
+
+## Local Development
+
+```bash
+git clone <repo-url>
+cd foninez
+npm install
+npm run dev
